@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 56" fill="none" role="img" aria-label="staywire">
+  <path d="M4 36 H13 L20 22 L27 36 H32" stroke="#F5F7FB" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="37.5" cy="36" r="3" fill="#4D5BF5"/>
+  <text x="50" y="42" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-size="38" font-weight="400" letter-spacing="-0.5" fill="#F5F7FB">staywire</text>
+</svg>

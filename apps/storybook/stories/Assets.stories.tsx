@@ -1,23 +1,17 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import guidelines from "@staywirekit/tokens/guidelines.json";
-import { Page, Hero, Section, Grid, DownloadLink, brandUrl, repoUrl } from "./guide";
+import { Page, Hero, Section, DownloadLink, repoUrl } from "./guide";
 
-function AssetTile({ path, video = false }: { path: string; video?: boolean }) {
-  const url = brandUrl(path);
-  const file = path.split("/").pop()!;
+// staywire ships NO art yet — this page renders honest empty states per asset
+// class (playbook trap #3: an empty class is an explained state, never a
+// blank section). Fonts intentionally have no downloadable files: they ship
+// as @fontsource packages inside the kit.
+
+function EmptyState({ title, body }: { title: string; body: string }) {
   return (
-    <div className="overflow-hidden rounded-lg border border-border">
-      {video ? (
-        <video src={url} muted loop autoPlay playsInline className="block aspect-video w-full object-cover" />
-      ) : (
-        <img src={url} alt={file} className="block aspect-video w-full object-cover" />
-      )}
-      <div className="flex items-center justify-between gap-(--space-sm) border-t border-border bg-card p-(--space-md)">
-        <span className="truncate font-mono text-label text-muted-foreground">{file}</span>
-        <a href={url} download={file} className="text-label text-muted-foreground no-underline hover:text-foreground" title={`Download ${file}`}>
-          ↓
-        </a>
-      </div>
+    <div className="flex flex-col gap-(--space-sm) rounded-lg border border-dashed border-border bg-muted p-(--space-xl)">
+      <span className="text-title font-semibold tracking-title text-foreground">{title}</span>
+      <p className="max-w-[62ch] text-body text-muted-foreground">{body}</p>
     </div>
   );
 }
@@ -26,26 +20,33 @@ function Assets() {
   return (
     <Page>
       <Hero
-        title="Flow lines"
-        lead={guidelines.art.description}
+        title="Assets"
+        lead="What ships today, what's specified but not yet drawn, and where each thing lives. Every surface must degrade gracefully to pure typography — that's a brand rule, not a gap."
       />
-      <div className="flex gap-(--space-sm)">
-        <DownloadLink href={repoUrl("brand/reference/brand/assets/flow-lines/still")}>Browse stills</DownloadLink>
-        <DownloadLink href={repoUrl("brand/reference/brand/assets/flow-lines/motion")}>Browse motion</DownloadLink>
-      </div>
-      <Section label="Art" title="Stills" intro="Backgrounds, print, decks. Crop generously; the strands should exit the frame.">
-        <Grid min={300}>
-          {guidelines.art.stills.map((p) => (
-            <AssetTile key={p} path={p} />
-          ))}
-        </Grid>
+
+      <Section label="Logo" title="Wordmark + mark" intro="Four SVGs, versioned in the repo. The Logo page shows the canonical inline render and the rules.">
+        <DownloadLink href={repoUrl(guidelines.logo.download)}>Browse the logo kit</DownloadLink>
       </Section>
-      <Section label="Art" title="Motion" intro="Hero moments only — one per page, never looping in a corner.">
-        <Grid min={300}>
-          {guidelines.art.motion.map((p) => (
-            <AssetTile key={p} path={p} video />
+
+      <Section
+        label="Fonts"
+        title="No files to download — by design"
+        intro="Fraunces, Inter, and JetBrains Mono ship as @fontsource packages inside @staywirekit/ui. One styles import loads them in any consumer; there is nothing to host or license."
+      >
+        <div className="flex flex-wrap gap-(--space-sm)">
+          {guidelines.typography.faces.map((f) => (
+            <span key={f.family} className="rounded-md border border-border bg-card px-(--space-md) py-(--space-xs) text-label text-card-foreground">
+              {f.family} · {f.weights.join("/")}
+            </span>
           ))}
-        </Grid>
+        </div>
+      </Section>
+
+      <Section label="Art" title={guidelines.art.name} intro="">
+        <EmptyState
+          title="Not yet drawn — blocked on a brand drop"
+          body={guidelines.art.description}
+        />
       </Section>
     </Page>
   );
@@ -58,4 +59,4 @@ const meta: Meta<typeof Assets> = {
 };
 
 export default meta;
-export const FlowLines: StoryObj<typeof Assets> = { name: "Flow lines" };
+export const AssetIndex: StoryObj<typeof Assets> = { name: "Assets" };

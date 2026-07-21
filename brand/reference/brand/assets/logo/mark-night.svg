@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-label="staywire mark">
+  <!-- The wire: a line carrying one stay — a roofline node on the signal path. -->
+  <path d="M4 31 H15 L24 15 L33 31 H39" stroke="#F5F7FB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="44" cy="31" r="3.5" fill="#4D5BF5"/>
+</svg>

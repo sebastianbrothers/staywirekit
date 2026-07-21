@@ -12,3 +12,5 @@ type Story = StoryObj;
 
 export const Variant1: Story = { name: "CTA 1", render: () => <CTA1 /> };
 export const Variant2: Story = { name: "CTA 2", render: () => <CTA2 /> };
+
+export const Variant3: Story = { name: "CTA 3 — staywire closing band", render: () => <Cta3 /> };

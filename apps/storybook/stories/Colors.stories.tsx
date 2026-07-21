@@ -10,8 +10,8 @@ function Colors() {
     <Page>
       <Section
         label="Colour"
-        title="One purple, earned colour"
-        intro="A committed single-hue identity: one deep-purple canvas, one vivid purple brand colour, two reserved accents, and a narrow set of tinted neutrals. There are no true grays — every neutral leans toward the brand hue. Click any value to copy it."
+        title="Ink on paper, one signature"
+        intro="A light-first system: cool paper canvas, near-black ink doing the loud work, hairline mist carrying depth, and wire indigo as the single signature — links, focus, selected, nothing more. Every neutral leans cool toward the ink cast; there are no warm grays. Click any value to copy it."
       >
         {guidelines.colors.groups.map((g) => (
           <div key={g.id} className="flex flex-col gap-(--space-lg)">
@@ -34,7 +34,7 @@ function Colors() {
       <Section
         label="Functional ramps"
         title="The working layer"
-        intro="Five hues, nine steps each, for product-UI mechanics only — states, surfaces, feedback. Purple 600 and 900 are the brand anchors. A ramp step is a functional token, never a brand accent."
+        intro="Six hues, nine steps each, for product-UI mechanics only — states, feedback, charts. Indigo 600 is the brand anchor. A ramp step is a functional token, never a decoration."
       >
         <div className="flex flex-col gap-(--space-md)">
           {guidelines.colors.ramps.map((r) => (

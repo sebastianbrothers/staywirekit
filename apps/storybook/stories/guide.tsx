@@ -1,10 +1,10 @@
 import React from "react";
 
-// Shared presentational helpers for the staywire brand-guide pages. Airy + readable
-// (inspired by getdesign.md), but staywire-correct: sentence case, the › chevron
-// device, no numbered/tracked-uppercase eyebrows. Everything is built from the
-// kit's own design-system utilities (text-*, spacing-*, color-*) — the guide
-// dogfoods the tokens it documents.
+// Shared presentational helpers for the staywire brand-guide pages. Editorial +
+// restrained: serif display at weight 400, sentence case, hairline borders,
+// the wire-dash label device ("—"), indigo used scarcely. Everything is built
+// from the kit's own design-system utilities (text-*, space-*, color-*) — the
+// guide dogfoods the tokens it documents.
 
 export function Page({ children }: { children: React.ReactNode }) {
   return <div className="mx-auto flex max-w-[1080px] flex-col gap-(--space-xxl)">{children}</div>;
@@ -13,8 +13,8 @@ export function Page({ children }: { children: React.ReactNode }) {
 export function Hero({ title, lead }: { title: string; lead: string }) {
   return (
     <header className="flex flex-col gap-(--space-lg) pt-(--space-lg)">
-      <span className="text-label text-muted-foreground">{"› Brand system"}</span>
-      <h1 className="max-w-[16ch] font-display text-display leading-display tracking-display">{title}</h1>
+      <span className="text-label tracking-label text-muted-foreground">{"— brand system"}</span>
+      <h1 className="max-w-[16ch] font-display font-normal text-display leading-display tracking-display">{title}</h1>
       <p className="max-w-[62ch] text-body text-muted-foreground">{lead}</p>
     </header>
   );
@@ -34,8 +34,8 @@ export function Section({
   return (
     <section className="flex flex-col gap-(--space-lg)">
       <div className="flex flex-col gap-(--space-sm)">
-        <span className="text-label text-muted-foreground">{`› ${label}`}</span>
-        <h2 className="font-display text-headline leading-headline tracking-headline">{title}</h2>
+        <span className="text-label tracking-label text-muted-foreground">{`— ${label.toLowerCase()}`}</span>
+        <h2 className="font-display font-normal text-headline leading-headline tracking-headline">{title}</h2>
         {intro ? <p className="max-w-[62ch] text-body text-muted-foreground">{intro}</p> : null}
       </div>
       {children}
@@ -44,7 +44,7 @@ export function Section({
 }
 
 export function GroupLabel({ children }: { children: React.ReactNode }) {
-  return <h3 className="text-title font-display tracking-title">{children}</h3>;
+  return <h3 className="text-title font-semibold tracking-title">{children}</h3>;
 }
 
 export function Grid({ children, min = 200 }: { children: React.ReactNode; min?: number }) {
@@ -144,7 +144,7 @@ export function DownloadLink({ href, children }: { href: string; children: React
     <a
       href={href}
       download
-      className="inline-flex w-fit items-center gap-2 rounded-(--radius-pill) border border-border px-(--space-md) py-(--space-xs) text-label font-medium text-foreground no-underline transition-colors hover:bg-secondary"
+      className="inline-flex w-fit items-center gap-2 rounded-md border border-border px-(--space-md) py-(--space-xs) text-label font-medium text-foreground no-underline transition-colors hover:bg-secondary"
     >
       {children}
       <span aria-hidden>↓</span>
@@ -152,14 +152,21 @@ export function DownloadLink({ href, children }: { href: string; children: React
   );
 }
 
+/** Logo tile on SEMANTIC surfaces (trap #4: never identity vars for tile
+    backgrounds). Falls back to a rendered note if the asset fails to load. */
 export function LogoTile({ label, src, bg, file }: { label: string; src: string; bg: "dark" | "light"; file: string }) {
+  const [failed, setFailed] = React.useState(false);
   return (
     <div className="overflow-hidden rounded-lg border border-border">
       <div
         className="flex items-center justify-center p-(--space-xl)"
-        style={{ background: bg === "dark" ? "var(--color-deep-purple)" : "var(--color-white)", minHeight: 180 }}
+        style={{ background: bg === "dark" ? "var(--color-night)" : "var(--color-white)", minHeight: 180 }}
       >
-        <img src={src} alt={label} style={{ maxWidth: "60%", maxHeight: 96 }} />
+        {failed ? (
+          <span className="text-label text-muted-foreground">asset missing — see Logo page rules</span>
+        ) : (
+          <img src={src} alt={label} style={{ maxWidth: "70%", maxHeight: 96 }} onError={() => setFailed(true)} />
+        )}
       </div>
       <div className="flex items-center justify-between gap-(--space-sm) border-t border-border bg-card p-(--space-md)">
         <span className="text-label text-card-foreground">{label}</span>
@@ -171,34 +178,46 @@ export function LogoTile({ label, src, bg, file }: { label: string; src: string;
   );
 }
 
+const WEIGHT_NAMES: Record<number, string> = {
+  300: "Light",
+  400: "Regular",
+  500: "Medium",
+  600: "Semibold",
+  700: "Bold",
+};
+
+/** Prints the ACTUAL numeric weight (trap #4 — never assume a two-weight world). */
+export const weightBadge = (weight: number) => `${WEIGHT_NAMES[weight] ?? "Weight"} ${weight}`;
+
 export function SpecimenRow({
   token,
   weight,
   sample,
-  display = true,
+  face = "sans",
   label,
 }: {
   token: string;
   weight: number;
   sample: string;
-  display?: boolean;
+  face?: "display" | "sans" | "mono";
   label?: string;
 }) {
+  const faceClass = face === "display" ? "font-display" : face === "mono" ? "font-mono" : "font-sans";
   return (
     <div className="grid items-baseline gap-(--space-md) border-b border-border py-(--space-lg)" style={{ gridTemplateColumns: "180px 1fr" }}>
       <div className="flex flex-col gap-(--space-xs)">
         {label ? <span className="text-label font-medium text-foreground">{label}</span> : null}
         <code className="font-mono text-label text-foreground">text-{token}</code>
         <code className="font-mono text-label text-muted-foreground">
-          {weight === 500 ? "Medium 500" : "Regular 400"} · leading-{token} · tracking-{token}
+          {weightBadge(weight)} · leading-{token}
         </code>
       </div>
       <div
-        className={display ? "font-display" : "font-sans"}
+        className={faceClass}
         style={{
           fontSize: `var(--text-${token})`,
           lineHeight: `var(--leading-${token})` as string,
-          letterSpacing: `var(--tracking-${token})`,
+          letterSpacing: `var(--tracking-${token}, var(--tracking-normal))`,
           fontWeight: weight,
         }}
       >

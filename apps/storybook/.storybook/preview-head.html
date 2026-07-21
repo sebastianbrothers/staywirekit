@@ -1,12 +1,7 @@
-<!-- Graphik ships inside @staywirekit/ui (fonts.css via the styles import).
-     DM Sans is the sanctioned open-source fallback (loaded from Google Fonts) per the
-     brand voice/design docs; the token stack falls Graphik → DM Sans → system. -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-  rel="stylesheet"
-/>
+<!-- staywire faces (Fraunces / Inter / JetBrains Mono) ship inside
+     @staywirekit/ui via @fontsource imports in fonts.css — no external font
+     loading needed here (REGENERATE-PER-BRAND: Graphik-era Google Fonts
+     fallback removed). -->
 <style>
   /* Theme the whole canvas: addon-themes toggles `.dark` on <html>; --background
      / --foreground come from @staywirekit/ui theme.css and inherit to body. */

@@ -1,25 +1,20 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import flat from "@staywirekit/tokens/flat";
 import { Page, Section } from "./guide";
 
-const SPACING = [
-  ["xs", "4px"],
-  ["sm", "8px"],
-  ["md", "16px"],
-  ["lg", "24px"],
-  ["xl", "40px"],
-  ["xxl", "64px"],
+// All names + values read from the flat token export (playbook trap #3:
+// never hardcode token names or px literals). Bars paint with SEMANTIC vars.
+
+const tokens = flat as Record<string, string>;
+
+const SPACING_ROLES = ["xs", "sm", "md", "lg", "xl", "xxl"];
+const RHYTHM_ROLES: Array<[string, string]> = [
+  ["gutter", "Side gutters — the container utility's inline padding."],
+  ["section", "Between page sections — py-section. FLAGGED for Gate A retune."],
+  ["section-lg", "Section rhythm from the lg breakpoint up. FLAGGED for Gate A retune."],
+  ["container-max", "Content cap — the container utility's max-width."],
 ];
-const RHYTHM = [
-  ["gutter", "32px", "Side gutters — the container utility's inline padding."],
-  ["section", "64px", "Between page sections on mobile — py-section."],
-  ["section-lg", "160px", "Between page sections from the lg breakpoint up."],
-];
-const RADIUS = [
-  ["sm", "8px"],
-  ["md", "12px"],
-  ["lg", "20px"],
-  ["pill", "999px"],
-];
+const RADIUS_ROLES = ["sm", "md", "lg", "xl", "pill"];
 
 function SpacingRadius() {
   return (
@@ -30,13 +25,13 @@ function SpacingRadius() {
         intro="Named steps from xs to xxl. Use the tokens (gap-(--space-lg), p-(--space-xl)) rather than arbitrary values so rhythm stays consistent."
       >
         <div className="flex flex-col gap-(--space-md)">
-          {SPACING.map(([name, px]) => (
+          {SPACING_ROLES.map((name) => (
             <div key={name} className="flex items-center gap-(--space-md)">
               <code className="font-mono text-label text-muted-foreground" style={{ width: 110 }}>
-                spacing-{name}
+                space-{name}
               </code>
-              <div className="rounded-sm" style={{ height: 16, width: `var(--space-${name})`, background: "var(--color-primary-purple)" }} />
-              <code className="font-mono text-label text-muted-foreground">{px}</code>
+              <div className="rounded-sm bg-primary" style={{ height: 16, width: `var(--space-${name})` }} />
+              <code className="font-mono text-label text-muted-foreground">{tokens[`spacing-${name}`] ?? tokens[`space-${name}`] ?? ""}</code>
             </div>
           ))}
         </div>
@@ -44,17 +39,18 @@ function SpacingRadius() {
 
       <Section
         label="Page rhythm"
-        title="Gutter and section spacing"
-        intro="Page-level layout has its own knobs: container reads the gutter token for side padding, and every block's root uses py-section for vertical rhythm. Retune the page by editing these three tokens — never per-block."
+        title="Gutter, section, and the container cap"
+        intro="Page-level layout has its own knobs: container reads the gutter token for side padding and container-max for its cap; every block's root uses py-section. Retune the page by editing these tokens — never per-block. Current values were chosen from the reference rhythm and are flagged for the morning review."
       >
         <div className="flex flex-col gap-(--space-md)">
-          {RHYTHM.map(([name, px, usage]) => (
+          {RHYTHM_ROLES.map(([name, usage]) => (
             <div key={name} className="flex items-center gap-(--space-md)">
-              <code className="font-mono text-label text-muted-foreground" style={{ width: 160 }}>
-                spacing-{name}
+              <code className="font-mono text-label text-muted-foreground" style={{ width: 170 }}>
+                space-{name}
               </code>
-              <div className="rounded-sm" style={{ height: 16, width: `var(--space-${name})`, background: "var(--color-primary-purple)" }} />
-              <code className="font-mono text-label text-muted-foreground">{px}</code>
+              <code className="font-mono text-label text-foreground" style={{ width: 70 }}>
+                {tokens[`spacing-${name}`] ?? tokens[`space-${name}`] ?? ""}
+              </code>
               <span className="text-label text-muted-foreground">{usage}</span>
             </div>
           ))}
@@ -63,18 +59,18 @@ function SpacingRadius() {
 
       <Section
         label="Radius"
-        title="Pill is the house shape"
-        intro="Cards use lg (20px); the pill (999px) is the button shape. Small and medium handle inputs and chips."
+        title="Two working shapes"
+        intro="8px on buttons and inputs, 12px on cards and code wells — md is load-bearing (--radius reads it). The pill is reserved for chips, status dots, and avatars; it is not the button shape."
       >
         <div className="flex flex-wrap gap-(--space-lg)">
-          {RADIUS.map(([name, px]) => (
+          {RADIUS_ROLES.map((name) => (
             <div key={name} className="flex flex-col items-center gap-(--space-sm)">
               <div
-                className="border border-border"
-                style={{ width: 96, height: 96, background: "var(--color-light-purple)", borderRadius: `var(--radius-${name})` }}
+                className="border border-border bg-secondary"
+                style={{ width: 96, height: 96, borderRadius: `var(--radius-${name})` }}
               />
               <code className="font-mono text-label text-muted-foreground">radius-{name}</code>
-              <code className="font-mono text-label text-muted-foreground">{px}</code>
+              <code className="font-mono text-label text-muted-foreground">{tokens[`radius-${name}`] ?? ""}</code>
             </div>
           ))}
         </div>

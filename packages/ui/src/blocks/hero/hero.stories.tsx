@@ -4,6 +4,7 @@ import { Hero2 } from "./hero2";
 import { Hero3 } from "./hero3";
 import { Hero4 } from "./hero4";
 import { Hero5 } from "./hero5";
+import { Hero6 } from "./hero6";
 
 const meta: Meta = {
   title: "Blocks/Hero",
@@ -18,3 +19,4 @@ export const Variant2: Story = { name: "Hero 2", render: () => <Hero2 /> };
 export const Variant3: Story = { name: "Hero 3", render: () => <Hero3 /> };
 export const Variant4: Story = { name: "Hero 4", render: () => <Hero4 /> };
 export const Variant5: Story = { name: "Hero 5", render: () => <Hero5 /> };
+export const Variant6: Story = { name: "Hero 6 — staywire serif stripe", render: () => <Hero6 /> };

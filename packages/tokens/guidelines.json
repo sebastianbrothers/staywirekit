@@ -1,101 +1,89 @@
 {
-  "$description": "Structured brand guidelines — the single source for the Storybook Foundations pages, brand.json, and the lab_brand MCP server. Token names refer to tokens.json / tokens.flat.json; file paths are repo-relative.",
+  "$description": "Structured brand guidelines — the single source for the Storybook Foundations pages, brand.json, and the lab_brand MCP server. Token names refer to tokens.json / tokens.flat.json; file paths are repo-relative. staywire: the API-first booking engine's brand — light-first, editorial serif display, ink-is-the-loudest-pixel, wire-indigo signature.",
   "logo": {
     "download": "brand/reference/brand/assets/logo",
     "variants": [
-      { "id": "h-color-ondark", "label": "Horizontal — colour on dark", "file": "brand/reference/brand/assets/logo/logo-h-color-ondark.svg", "bg": "dark", "primary": true },
-      { "id": "h-color-onlight", "label": "Horizontal — colour on light", "file": "brand/reference/brand/assets/logo/logo-h-color-onlight.svg", "bg": "light", "primary": true },
-      { "id": "h-white", "label": "Horizontal — white", "file": "brand/reference/brand/assets/logo/logo-h-white.svg", "bg": "dark" },
-      { "id": "h-black", "label": "Horizontal — black", "file": "brand/reference/brand/assets/logo/logo-h-black.svg", "bg": "light" },
-      { "id": "h-yellow-ondark", "label": "Horizontal — yellow on dark", "file": "brand/reference/brand/assets/logo/logo-h-yellow-ondark.svg", "bg": "dark" },
-      { "id": "h-yellow-onlight", "label": "Horizontal — yellow on light", "file": "brand/reference/brand/assets/logo/logo-h-yellow-onlight.svg", "bg": "light" },
-      { "id": "v-purple-ondark", "label": "Vertical — purple on dark", "file": "brand/reference/brand/assets/logo/logo-v-purple-ondark.svg", "bg": "dark" },
-      { "id": "v-purple-onlight", "label": "Vertical — purple on light", "file": "brand/reference/brand/assets/logo/logo-v-purple-onlight.svg", "bg": "light" },
-      { "id": "v-white", "label": "Vertical — white", "file": "brand/reference/brand/assets/logo/logo-v-white.svg", "bg": "dark" },
-      { "id": "v-black", "label": "Vertical — black", "file": "brand/reference/brand/assets/logo/logo-v-black.svg", "bg": "light" },
-      { "id": "v-yellow-ondark", "label": "Vertical — yellow on dark", "file": "brand/reference/brand/assets/logo/logo-v-yellow-ondark.svg", "bg": "dark" },
-      { "id": "v-yellow-onlight", "label": "Vertical — yellow on light", "file": "brand/reference/brand/assets/logo/logo-v-yellow-onlight.svg", "bg": "light" }
+      { "id": "h-wordmark-onlight", "label": "Horizontal — wordmark on light", "file": "brand/reference/brand/assets/logo/wordmark.svg", "bg": "light", "primary": true },
+      { "id": "h-wordmark-ondark", "label": "Horizontal — wordmark on night", "file": "brand/reference/brand/assets/logo/wordmark-night.svg", "bg": "dark" },
+      { "id": "v-mark-onlight", "label": "Mark — on light", "file": "brand/reference/brand/assets/logo/mark.svg", "bg": "light", "primary": true },
+      { "id": "v-mark-ondark", "label": "Mark — on night", "file": "brand/reference/brand/assets/logo/mark-night.svg", "bg": "dark" }
     ]
   },
   "colors": {
     "groups": [
       {
-        "id": "brand",
-        "label": "Brand purples",
+        "id": "surfaces",
+        "label": "Ink & paper",
         "items": [
-          { "name": "Deep purple", "token": "color-deep-purple", "usage": "Default dark canvas." },
-          { "name": "Primary purple", "token": "color-primary-purple", "usage": "The brand colour — CTAs, links, active." },
-          { "name": "Primary purple deep", "token": "color-primary-purple-deep", "usage": "Hover / active state." },
-          { "name": "Mid purple", "token": "color-mid-purple", "usage": "Glow, focus ring, strand highlights." },
-          { "name": "Light purple", "token": "color-light-purple", "usage": "Light-mode surfaces and cards." }
+          { "name": "Ink", "token": "color-ink", "usage": "Primary text and the loudest pixel — primary CTAs on light." },
+          { "name": "Paper", "token": "color-paper", "usage": "The light canvas. Cool paper, faint blue cast." },
+          { "name": "White", "token": "color-white", "usage": "Cards and figure surfaces — one step above paper." },
+          { "name": "Deep paper", "token": "color-deep-paper", "usage": "Inset wells: code windows, terminal shells." },
+          { "name": "Mist", "token": "color-mist", "usage": "Hairline borders and dividers. Depth without shadows." }
         ]
       },
       {
-        "id": "accents",
-        "label": "Accents",
+        "id": "text",
+        "label": "Text neutrals",
         "items": [
-          { "name": "Yellow", "token": "color-yellow", "usage": "A rare single mark. Never a second brand colour." },
-          { "name": "UI green", "token": "color-ui-green", "usage": "Product status only — uptime, checks, active." }
+          { "name": "Slate", "token": "color-slate", "usage": "Secondary text — captions, nav labels." },
+          { "name": "Ash", "token": "color-ash", "usage": "Tertiary text, footer copy, disabled labels." }
         ]
       },
       {
-        "id": "neutrals",
-        "label": "Neutrals & surfaces",
+        "id": "signature",
+        "label": "Wire indigo",
         "items": [
-          { "name": "White", "token": "color-white", "usage": "Text on dark; negative space on light." },
-          { "name": "Surface dark", "token": "color-surface-dark", "usage": "Raised cards / panels on the dark canvas." },
-          { "name": "Line dark", "token": "color-line-dark", "usage": "Hairline rules, borders, dividers on dark." },
-          { "name": "Muted on dark", "token": "color-muted-on-dark", "usage": "Secondary / caption text on deep purple." }
+          { "name": "Indigo", "token": "color-indigo", "usage": "The signature — links, focus ring, selected. Scarce by rule." },
+          { "name": "Indigo deep", "token": "color-indigo-deep", "usage": "Hover / active state. A state, not a second brand colour." },
+          { "name": "Indigo wash", "token": "color-indigo-wash", "usage": "Subtle tint surfaces — chips, selected rows, washes." }
+        ]
+      },
+      {
+        "id": "night",
+        "label": "Night (dark mode)",
+        "items": [
+          { "name": "Night", "token": "color-night", "usage": "Dark canvas — ink as a surface." },
+          { "name": "Night raised", "token": "color-night-raised", "usage": "Dark cards, one luminance step up." },
+          { "name": "Night deep", "token": "color-night-deep", "usage": "Dark code wells — cooler and darker than canvas." },
+          { "name": "Line night", "token": "color-line-night", "usage": "Hairlines on dark." },
+          { "name": "Paper on night", "token": "color-paper-on-night", "usage": "Primary text on dark; the dark mode's brightest pixel (primary CTA)." }
         ]
       }
     ],
-    "ramps": ["purple", "red", "yellow", "green", "neutral"]
+    "ramps": ["indigo", "blue", "red", "yellow", "green", "neutral"]
   },
   "typography": {
-    "download": "brand/reference/brand/assets/fonts/Graphik",
+    "download": "brand/reference/brand/assets/fonts",
     "faces": [
-      { "family": "Graphik", "role": "Display + body", "weights": [400, 500, 600, 700], "source": "Shipped in @staywirekit/ui (fonts.css)" },
-      { "family": "DM Sans", "role": "Open-source fallback", "weights": [400, 500, 700], "source": "Google Fonts" }
+      { "family": "Fraunces", "role": "Display — hero and section headlines only", "weights": [400, 500], "source": "@fontsource/fraunces (shipped via the kit's styles import)" },
+      { "family": "Inter", "role": "Body + UI — everything that isn't a headline or code", "weights": [400, 500, 600, 700], "source": "@fontsource/inter (shipped via the kit's styles import)" },
+      { "family": "JetBrains Mono", "role": "Code wells, inline code, delivery-log figures", "weights": [400, 500], "source": "@fontsource/jetbrains-mono (shipped via the kit's styles import)" }
     ],
     "styles": [
-      { "id": "display", "label": "Display (D1)", "token": "display", "face": "display", "weight": 500, "sample": "The Co-operation Network" },
-      { "id": "headline", "label": "Heading (H1)", "token": "headline", "face": "display", "weight": 500, "sample": "The internet was built for co-operation. It's always been at its best when people create, connect, and collaborate together." },
-      { "id": "title", "label": "Title (H2)", "token": "title", "face": "display", "weight": 500, "sample": "Open by design. Built around you." },
-      { "id": "body", "label": "Body (B1)", "token": "body", "face": "sans", "weight": 400, "sample": "The internet was made for sharing: invitations, information, inspiration — kernels of connected ideas that light up when more people join in. With every connection comes a chance to build something bigger together. It all starts with the network, the literal cables that connect IRL and URL." },
-      { "id": "label", "label": "Label (L1)", "token": "label", "face": "sans", "weight": 500, "sample": "› Canada's co-operation network" }
+      { "id": "display", "label": "Display (D1)", "token": "display", "face": "display", "weight": 400, "sample": "The booking wire." },
+      { "id": "headline", "label": "Headline (H1)", "token": "headline", "face": "display", "weight": 400, "sample": "Direct bookings, confirmed on the wire." },
+      { "id": "title", "label": "Title (H2)", "token": "title", "face": "sans", "weight": 600, "sample": "Book, confirm, deliver." },
+      { "id": "body", "label": "Body (B1)", "token": "body", "face": "sans", "weight": 400, "sample": "staywire is the engine between a property's website and a confirmed guest. Availability, quotes, and bookings ride one public API — the same one the admin, the embed, and booking agents use. Double-booking is impossible at the database layer, so the copy never has to hedge." },
+      { "id": "label", "label": "Label (L1)", "token": "label", "face": "sans", "weight": 500, "sample": "Status: confirmed" },
+      { "id": "body-lg", "label": "Body large", "token": "body-lg", "face": "sans", "weight": 400, "sample": "The best way to take a booking is directly — on your own site, at your own rates." },
+      { "id": "caption", "label": "Caption", "token": "caption", "face": "sans", "weight": 400, "sample": "Rates shown in the property's currency. Taxes itemized at quote time." },
+      { "id": "code", "label": "Code", "token": "code", "face": "mono", "weight": 400, "sample": "POST /v1/bookings → 201 { \"reference\": \"SW-4F7K2X\" }" }
     ]
   },
   "art": {
-    "name": "Flow lines",
-    "description": "The brand art — fibre strands drawn as light. Stills for backgrounds and print; motion for hero moments.",
-    "stills": [
-      "brand/reference/brand/assets/flow-lines/still/1.png",
-      "brand/reference/brand/assets/flow-lines/still/2.png",
-      "brand/reference/brand/assets/flow-lines/still/3.png",
-      "brand/reference/brand/assets/flow-lines/still/4.png"
-    ],
-    "motion": [
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-66.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-66-yellow.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-67.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-67-yellow.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-68.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-68-yellow.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-70.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-70-yellow.mp4"
-    ]
+    "name": "Wire fields",
+    "description": "No art assets ship yet — the art direction (thin wire strokes with node dots, drawn in mist/indigo on paper) is specified but blocked on a brand drop. Every surface must degrade gracefully to pure typography.",
+    "stills": [],
+    "motion": []
   },
   "resources": [
-    { "label": "Atomic brand system", "type": "figma", "url": "https://www.figma.com/design/bkBYMkh5sbW80R2AIK9ugK/Staywire-ABS?node-id=21478-696" },
-    { "label": "Creative direction presentation", "type": "figma", "url": "https://www.figma.com/design/bkBYMkh5sbW80R2AIK9ugK/Staywire-ABS?node-id=21478-5647" },
     { "label": "Brand guide", "type": "web", "url": "https://staywirekit-storybook.vercel.app" },
     { "label": "Reference site", "type": "web", "url": "https://staywirekit-site.vercel.app" },
-    { "label": "ToolKit guidelines", "type": "web", "url": "https://app.brandtoolk.it/guidelines/staywire" }
+    { "label": "Product", "type": "web", "url": "https://staywire-api.vercel.app/docs" }
   ],
   "downloads": [
     { "label": "Logo kit", "path": "brand/reference/brand/assets/logo" },
-    { "label": "Font files", "path": "brand/reference/brand/assets/fonts/Graphik" },
-    { "label": "Flow lines — stills", "path": "brand/reference/brand/assets/flow-lines/still" },
-    { "label": "Flow lines — motion", "path": "brand/reference/brand/assets/flow-lines/motion" }
+    { "label": "Fonts", "path": "brand/reference/brand/assets/fonts" }
   ]
 }
