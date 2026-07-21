@@ -1,0 +1,101 @@
+{
+  "$description": "Structured brand guidelines — the single source for the Storybook Foundations pages, brand.json, and the lab_brand MCP server. Token names refer to tokens.json / tokens.flat.json; file paths are repo-relative.",
+  "logo": {
+    "download": "brand/reference/brand/assets/logo",
+    "variants": [
+      { "id": "h-color-ondark", "label": "Horizontal — colour on dark", "file": "brand/reference/brand/assets/logo/logo-h-color-ondark.svg", "bg": "dark", "primary": true },
+      { "id": "h-color-onlight", "label": "Horizontal — colour on light", "file": "brand/reference/brand/assets/logo/logo-h-color-onlight.svg", "bg": "light", "primary": true },
+      { "id": "h-white", "label": "Horizontal — white", "file": "brand/reference/brand/assets/logo/logo-h-white.svg", "bg": "dark" },
+      { "id": "h-black", "label": "Horizontal — black", "file": "brand/reference/brand/assets/logo/logo-h-black.svg", "bg": "light" },
+      { "id": "h-yellow-ondark", "label": "Horizontal — yellow on dark", "file": "brand/reference/brand/assets/logo/logo-h-yellow-ondark.svg", "bg": "dark" },
+      { "id": "h-yellow-onlight", "label": "Horizontal — yellow on light", "file": "brand/reference/brand/assets/logo/logo-h-yellow-onlight.svg", "bg": "light" },
+      { "id": "v-purple-ondark", "label": "Vertical — purple on dark", "file": "brand/reference/brand/assets/logo/logo-v-purple-ondark.svg", "bg": "dark" },
+      { "id": "v-purple-onlight", "label": "Vertical — purple on light", "file": "brand/reference/brand/assets/logo/logo-v-purple-onlight.svg", "bg": "light" },
+      { "id": "v-white", "label": "Vertical — white", "file": "brand/reference/brand/assets/logo/logo-v-white.svg", "bg": "dark" },
+      { "id": "v-black", "label": "Vertical — black", "file": "brand/reference/brand/assets/logo/logo-v-black.svg", "bg": "light" },
+      { "id": "v-yellow-ondark", "label": "Vertical — yellow on dark", "file": "brand/reference/brand/assets/logo/logo-v-yellow-ondark.svg", "bg": "dark" },
+      { "id": "v-yellow-onlight", "label": "Vertical — yellow on light", "file": "brand/reference/brand/assets/logo/logo-v-yellow-onlight.svg", "bg": "light" }
+    ]
+  },
+  "colors": {
+    "groups": [
+      {
+        "id": "brand",
+        "label": "Brand purples",
+        "items": [
+          { "name": "Deep purple", "token": "color-deep-purple", "usage": "Default dark canvas." },
+          { "name": "Primary purple", "token": "color-primary-purple", "usage": "The brand colour — CTAs, links, active." },
+          { "name": "Primary purple deep", "token": "color-primary-purple-deep", "usage": "Hover / active state." },
+          { "name": "Mid purple", "token": "color-mid-purple", "usage": "Glow, focus ring, strand highlights." },
+          { "name": "Light purple", "token": "color-light-purple", "usage": "Light-mode surfaces and cards." }
+        ]
+      },
+      {
+        "id": "accents",
+        "label": "Accents",
+        "items": [
+          { "name": "Yellow", "token": "color-yellow", "usage": "A rare single mark. Never a second brand colour." },
+          { "name": "UI green", "token": "color-ui-green", "usage": "Product status only — uptime, checks, active." }
+        ]
+      },
+      {
+        "id": "neutrals",
+        "label": "Neutrals & surfaces",
+        "items": [
+          { "name": "White", "token": "color-white", "usage": "Text on dark; negative space on light." },
+          { "name": "Surface dark", "token": "color-surface-dark", "usage": "Raised cards / panels on the dark canvas." },
+          { "name": "Line dark", "token": "color-line-dark", "usage": "Hairline rules, borders, dividers on dark." },
+          { "name": "Muted on dark", "token": "color-muted-on-dark", "usage": "Secondary / caption text on deep purple." }
+        ]
+      }
+    ],
+    "ramps": ["purple", "red", "yellow", "green", "neutral"]
+  },
+  "typography": {
+    "download": "brand/reference/brand/assets/fonts/Graphik",
+    "faces": [
+      { "family": "Graphik", "role": "Display + body", "weights": [400, 500, 600, 700], "source": "Shipped in @sendwirekit/ui (fonts.css)" },
+      { "family": "DM Sans", "role": "Open-source fallback", "weights": [400, 500, 700], "source": "Google Fonts" }
+    ],
+    "styles": [
+      { "id": "display", "label": "Display (D1)", "token": "display", "face": "display", "weight": 500, "sample": "The Co-operation Network" },
+      { "id": "headline", "label": "Heading (H1)", "token": "headline", "face": "display", "weight": 500, "sample": "The internet was built for co-operation. It's always been at its best when people create, connect, and collaborate together." },
+      { "id": "title", "label": "Title (H2)", "token": "title", "face": "display", "weight": 500, "sample": "Open by design. Built around you." },
+      { "id": "body", "label": "Body (B1)", "token": "body", "face": "sans", "weight": 400, "sample": "The internet was made for sharing: invitations, information, inspiration — kernels of connected ideas that light up when more people join in. With every connection comes a chance to build something bigger together. It all starts with the network, the literal cables that connect IRL and URL." },
+      { "id": "label", "label": "Label (L1)", "token": "label", "face": "sans", "weight": 500, "sample": "› Canada's co-operation network" }
+    ]
+  },
+  "art": {
+    "name": "Flow lines",
+    "description": "The brand art — fibre strands drawn as light. Stills for backgrounds and print; motion for hero moments.",
+    "stills": [
+      "brand/reference/brand/assets/flow-lines/still/1.png",
+      "brand/reference/brand/assets/flow-lines/still/2.png",
+      "brand/reference/brand/assets/flow-lines/still/3.png",
+      "brand/reference/brand/assets/flow-lines/still/4.png"
+    ],
+    "motion": [
+      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-66.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-66-yellow.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-67.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-67-yellow.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-68.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-68-yellow.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-70.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-70-yellow.mp4"
+    ]
+  },
+  "resources": [
+    { "label": "Atomic brand system", "type": "figma", "url": "https://www.figma.com/design/bkBYMkh5sbW80R2AIK9ugK/Sendwire-ABS?node-id=21478-696" },
+    { "label": "Creative direction presentation", "type": "figma", "url": "https://www.figma.com/design/bkBYMkh5sbW80R2AIK9ugK/Sendwire-ABS?node-id=21478-5647" },
+    { "label": "Brand guide", "type": "web", "url": "https://sendwirekit-storybook.vercel.app" },
+    { "label": "Reference site", "type": "web", "url": "https://sendwirekit-site.vercel.app" },
+    { "label": "ToolKit guidelines", "type": "web", "url": "https://app.brandtoolk.it/guidelines/sendwire" }
+  ],
+  "downloads": [
+    { "label": "Logo kit", "path": "brand/reference/brand/assets/logo" },
+    { "label": "Font files", "path": "brand/reference/brand/assets/fonts/Graphik" },
+    { "label": "Flow lines — stills", "path": "brand/reference/brand/assets/flow-lines/still" },
+    { "label": "Flow lines — motion", "path": "brand/reference/brand/assets/flow-lines/motion" }
+  ]
+}

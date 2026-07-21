@@ -1,0 +1,9 @@
+# The brand KB ships in the repo. The Storybook build serves assets/ at /brand
+# (staticDirs), so everything under brand/reference/brand/assets must reach the
+# deploy — logos, fonts, and flow-lines (stills + motion, ~55M, within limits).
+# Exclude only KB material the build never reads.
+brand/source
+brand/outputs
+brand/wiki
+brand/reference/audience
+brand/reference/brand/assets/team-portraits

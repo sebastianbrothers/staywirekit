@@ -1,0 +1,24 @@
+{
+  "name": "@sendwirekit/site",
+  "version": "0.1.2",
+  "private": true,
+  "description": "Reference consumer — a sendwire marketing site composed entirely from kit blocks. Proves the kit builds real sites; see docs/BUILDING-WITH-THE-KIT.md.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@sendwirekit/ui": "workspace:*",
+    "next": "^16.1.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.7.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@sendwirekit/handoff",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "description": "AI handoff layer — generates root brand.json + HANDOFF.md; lab_brand MCP server",
+  "bin": {
+    "sendwirekit-mcp": "./src/mcp/server.mjs"
+  },
+  "scripts": {
+    "build": "node src/generate.mjs",
+    "mcp": "node src/mcp/server.mjs",
+    "lint": "node --check src/generate.mjs && node --check src/mcp/server.mjs"
+  },
+  "dependencies": {
+    "@sendwirekit/tokens": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.25.76"
+  }
+}

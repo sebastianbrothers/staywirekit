@@ -1,0 +1,104 @@
+/* sendwire-branded shadcn entry stylesheet.
+   Order matters in Tailwind v4: the framework import is first, then the sendwire
+   token preset (defines --color-*, --spacing-*, etc.), then the shadcn theme
+   mapping (consumes those tokens). shadcn `add` may append keyframes/utilities
+   below — that's fine. */
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "@sendwirekit/tokens/preset.css";
+@import "./theme.css";
+@import "./fonts.css";
+
+/* Tailwind v4 auto-detection is rooted at the consuming app (e.g. apps/storybook)
+   and won't traverse up into this package. Without this, utilities used only in
+   the shadcn components (bg-primary, rounded-md, h-9, …) are never generated.
+   @source is resolved relative to THIS file (packages/ui/src). */
+@source "./components/**/*.{ts,tsx}";
+@source "./blocks/**/*.{ts,tsx}";
+
+/* sendwire layout container. Tailwind v4's bare `container` is width-only (no
+   centering, no padding) — blocks and consuming apps expect the v3-style
+   behaviour, so the kit defines it: centered, token-driven gutter, 1400px cap. */
+@utility container {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: var(--space-gutter);
+}
+
+/* Section rhythm. Every block's root uses py-section instead of literal
+   py-20 lg:py-40 so page-level vertical rhythm is a per-brand token decision
+   (--space-section / --space-section-lg), not a vendored TWBlocks constant. */
+@utility py-section {
+  padding-block: var(--space-section);
+  @variant lg {
+    padding-block: var(--space-section-lg);
+  }
+}
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+
+    --sidebar: hsl(0 0% 98%);
+
+    --sidebar-foreground: hsl(240 5.3% 26.1%);
+
+    --sidebar-primary: hsl(240 5.9% 10%);
+
+    --sidebar-primary-foreground: hsl(0 0% 98%);
+
+    --sidebar-accent: hsl(240 4.8% 95.9%);
+
+    --sidebar-accent-foreground: hsl(240 5.9% 10%);
+
+    --sidebar-border: hsl(220 13% 91%);
+
+    --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+
+.dark {
+
+    --sidebar: hsl(240 5.9% 10%);
+
+    --sidebar-foreground: hsl(240 4.8% 95.9%);
+
+    --sidebar-primary: hsl(224.3 76.3% 48%);
+
+    --sidebar-primary-foreground: hsl(0 0% 100%);
+
+    --sidebar-accent: hsl(240 3.7% 15.9%);
+
+    --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
+
+    --sidebar-border: hsl(240 3.7% 15.9%);
+
+    --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+
+@theme inline {
+
+    --color-sidebar: var(--sidebar);
+
+    --color-sidebar-foreground: var(--sidebar-foreground);
+
+    --color-sidebar-primary: var(--sidebar-primary);
+
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+
+    --color-sidebar-accent: var(--sidebar-accent);
+
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+
+    --color-sidebar-border: var(--sidebar-border);
+
+    --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* shadcn v4 base layer (PLAYBOOK trap #2): without it bare `border` utilities
+   fall back to currentColor — harsh ink hairlines on a light brand. */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+}

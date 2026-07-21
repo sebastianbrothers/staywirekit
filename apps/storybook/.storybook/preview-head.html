@@ -1,0 +1,19 @@
+<!-- Graphik ships inside @sendwirekit/ui (fonts.css via the styles import).
+     DM Sans is the sanctioned open-source fallback (loaded from Google Fonts) per the
+     brand voice/design docs; the token stack falls Graphik → DM Sans → system. -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  /* Theme the whole canvas: addon-themes toggles `.dark` on <html>; --background
+     / --foreground come from @sendwirekit/ui theme.css and inherit to body. */
+  html,
+  body {
+    min-height: 100%;
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+</style>

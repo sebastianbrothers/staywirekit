@@ -1,0 +1,31 @@
+/* sendwire brand faces. Shipped with the kit so every consumer gets real Graphik
+   from the same one-line styles import — no app-level font hosting. Bundlers
+   (Vite, Next) resolve the relative url()s and emit the files. */
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/Graphik-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/Graphik-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/Graphik-Semibold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/Graphik-Bold.otf") format("opentype");
+}
