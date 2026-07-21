@@ -2,98 +2,120 @@
   "brand": "staywirekit",
   "basedOn": "staywire",
   "version": "0.2.1",
-  "generatedAt": "2026-07-20T22:24:49.659Z",
+  "generatedAt": "2026-07-21T10:52:57.799Z",
   "status": "populated",
   "source": "brand/reference/brand/",
   "tokens": {
-    "color-deep-purple": "#120c16",
-    "color-primary-purple": "#8100d0",
-    "color-primary-purple-deep": "#6800a8",
-    "color-mid-purple": "#c669ff",
-    "color-light-purple": "#e8d8f0",
+    "color-ink": "#0b0d12",
+    "color-paper": "#fafbfd",
     "color-white": "#ffffff",
-    "color-yellow": "#ffef3d",
-    "color-ui-green": "#03d000",
-    "color-surface-dark": "#1c1422",
-    "color-line-dark": "#2a2230",
-    "color-muted-on-dark": "#b7a9c2",
-    "color-ramp-red-100": "#fff5f2",
-    "color-ramp-red-200": "#ffd3c7",
-    "color-ramp-red-300": "#fb9378",
-    "color-ramp-red-400": "#e46545",
-    "color-ramp-red-500": "#c04524",
-    "color-ramp-red-600": "#a22800",
-    "color-ramp-red-700": "#810000",
-    "color-ramp-red-800": "#530000",
-    "color-ramp-red-900": "#270000",
-    "color-ramp-yellow-100": "#fefbcb",
-    "color-ramp-yellow-200": "#f9de2e",
-    "color-ramp-yellow-300": "#dba700",
-    "color-ramp-yellow-400": "#be7f00",
-    "color-ramp-yellow-500": "#a05e00",
-    "color-ramp-yellow-600": "#854400",
-    "color-ramp-yellow-700": "#682a00",
-    "color-ramp-yellow-800": "#4c0e00",
-    "color-ramp-yellow-900": "#270000",
-    "color-ramp-green-100": "#e7fee4",
-    "color-ramp-green-200": "#81f679",
-    "color-ramp-green-300": "#00cb00",
-    "color-ramp-green-400": "#00a300",
-    "color-ramp-green-500": "#008000",
-    "color-ramp-green-600": "#006400",
-    "color-ramp-green-700": "#004800",
-    "color-ramp-green-800": "#002c00",
-    "color-ramp-green-900": "#001200",
-    "color-ramp-purple-100": "#fbf6ff",
-    "color-ramp-purple-200": "#eed5ff",
-    "color-ramp-purple-300": "#d594ff",
-    "color-ramp-purple-400": "#bd61f9",
-    "color-ramp-purple-500": "#9b3ae3",
-    "color-ramp-purple-600": "#8100d0",
-    "color-ramp-purple-700": "#5c148c",
-    "color-ramp-purple-800": "#37144d",
-    "color-ramp-purple-900": "#120c16",
-    "color-ramp-neutral-100": "#faf7fc",
-    "color-ramp-neutral-200": "#e7d9ee",
-    "color-ramp-neutral-300": "#b9a9c0",
-    "color-ramp-neutral-400": "#96879e",
-    "color-ramp-neutral-500": "#776980",
-    "color-ramp-neutral-600": "#5f5068",
-    "color-ramp-neutral-700": "#46374f",
-    "color-ramp-neutral-800": "#2d1f37",
-    "color-ramp-neutral-900": "#16081f",
-    "font-sans": [
-      "Graphik",
-      "DM Sans",
-      "Helvetica Neue",
-      "Helvetica",
-      "Arial",
-      "system-ui",
-      "sans-serif"
-    ],
+    "color-deep-paper": "#f1f4f9",
+    "color-mist": "#e7eaf1",
+    "color-slate": "#4a5462",
+    "color-ash": "#8a93a1",
+    "color-indigo": "#4d5bf5",
+    "color-indigo-deep": "#3a46cc",
+    "color-indigo-wash": "#eef0fe",
+    "color-night": "#0b0d12",
+    "color-night-raised": "#151923",
+    "color-night-deep": "#07090e",
+    "color-line-night": "#252b38",
+    "color-paper-on-night": "#f5f7fb",
+    "color-ramp-red-100": "#fef1f1",
+    "color-ramp-red-200": "#fbd5d6",
+    "color-ramp-red-300": "#f4a6a9",
+    "color-ramp-red-400": "#ea7076",
+    "color-ramp-red-500": "#dc4550",
+    "color-ramp-red-600": "#c42b38",
+    "color-ramp-red-700": "#9c1f2e",
+    "color-ramp-red-800": "#6e1521",
+    "color-ramp-red-900": "#400c14",
+    "color-ramp-yellow-100": "#fff8e6",
+    "color-ramp-yellow-200": "#fdebb8",
+    "color-ramp-yellow-300": "#f7d470",
+    "color-ramp-yellow-400": "#ecb63b",
+    "color-ramp-yellow-500": "#d99a16",
+    "color-ramp-yellow-600": "#b37b0a",
+    "color-ramp-yellow-700": "#8a5d08",
+    "color-ramp-yellow-800": "#5f3f06",
+    "color-ramp-yellow-900": "#372403",
+    "color-ramp-green-100": "#ecfbf2",
+    "color-ramp-green-200": "#c9f2db",
+    "color-ramp-green-300": "#8fe3b4",
+    "color-ramp-green-400": "#4fcb8b",
+    "color-ramp-green-500": "#23ac69",
+    "color-ramp-green-600": "#148a52",
+    "color-ramp-green-700": "#0e6b40",
+    "color-ramp-green-800": "#09482c",
+    "color-ramp-green-900": "#052a1a",
+    "color-ramp-blue-100": "#eff6ff",
+    "color-ramp-blue-200": "#d4e6fd",
+    "color-ramp-blue-300": "#a3cbfa",
+    "color-ramp-blue-400": "#6ba9f5",
+    "color-ramp-blue-500": "#3f87ea",
+    "color-ramp-blue-600": "#2968d1",
+    "color-ramp-blue-700": "#1f4fa3",
+    "color-ramp-blue-800": "#163873",
+    "color-ramp-blue-900": "#0d2246",
+    "color-ramp-indigo-100": "#eef0fe",
+    "color-ramp-indigo-200": "#d9ddfd",
+    "color-ramp-indigo-300": "#b0b8fa",
+    "color-ramp-indigo-400": "#8790f8",
+    "color-ramp-indigo-500": "#6572f7",
+    "color-ramp-indigo-600": "#4d5bf5",
+    "color-ramp-indigo-700": "#3a46cc",
+    "color-ramp-indigo-800": "#2a3399",
+    "color-ramp-indigo-900": "#1b2166",
+    "color-ramp-neutral-100": "#f7f9fc",
+    "color-ramp-neutral-200": "#e7eaf1",
+    "color-ramp-neutral-300": "#c6ccd8",
+    "color-ramp-neutral-400": "#9aa3b2",
+    "color-ramp-neutral-500": "#6e7889",
+    "color-ramp-neutral-600": "#4a5462",
+    "color-ramp-neutral-700": "#333b47",
+    "color-ramp-neutral-800": "#1e242e",
+    "color-ramp-neutral-900": "#0b0d12",
     "font-display": [
-      "Graphik",
-      "DM Sans",
-      "Helvetica Neue",
+      "Fraunces",
+      "Georgia",
+      "Times New Roman",
+      "serif"
+    ],
+    "font-sans": [
+      "Inter",
+      "system-ui",
+      "Segoe UI",
       "Helvetica",
       "Arial",
-      "system-ui",
       "sans-serif"
     ],
-    "text-display": "clamp(2.5rem, 6vw, 5.5rem)",
-    "text-headline": "clamp(1.75rem, 3vw, 2.5rem)",
-    "text-title": "clamp(1.25rem, 1.6vw, 1.5rem)",
-    "text-body": "clamp(1rem, 1.1vw, 1.125rem)",
+    "font-mono": [
+      "JetBrains Mono",
+      "ui-monospace",
+      "SFMono-Regular",
+      "Menlo",
+      "monospace"
+    ],
+    "text-display": "clamp(2.75rem, 7vw, 6rem)",
+    "text-headline": "clamp(2rem, 4.5vw, 3.5rem)",
+    "text-title": "1.5rem",
+    "text-body": "1rem",
     "text-label": "0.8125rem",
-    "leading-display": 0.9,
+    "text-body-lg": "1.125rem",
+    "text-caption": "0.75rem",
+    "text-code": "0.8125rem",
+    "leading-display": 1,
     "leading-headline": 1.05,
-    "leading-title": 1.2,
-    "leading-body": 1.55,
-    "leading-label": 1.3,
-    "tracking-display": "-0.04em",
+    "leading-title": 1.35,
+    "leading-body": 1.5,
+    "leading-label": 1.4,
+    "leading-body-lg": 1.55,
+    "leading-caption": 1.5,
+    "leading-code": 1.6,
+    "tracking-display": "-0.015em",
     "tracking-headline": "-0.02em",
-    "tracking-title": "-0.01em",
-    "tracking-label": "0.01em",
+    "tracking-title": "-0.0125em",
+    "tracking-label": "0.025em",
     "tracking-normal": "0em",
     "spacing-xs": "4px",
     "spacing-sm": "8px",
@@ -101,12 +123,14 @@
     "spacing-lg": "24px",
     "spacing-xl": "40px",
     "spacing-xxl": "64px",
-    "spacing-gutter": "32px",
-    "spacing-section": "64px",
-    "spacing-section-lg": "160px",
-    "radius-sm": "8px",
-    "radius-md": "12px",
-    "radius-lg": "20px",
+    "spacing-gutter": "24px",
+    "spacing-section": "96px",
+    "spacing-section-lg": "128px",
+    "spacing-container-max": "1200px",
+    "radius-sm": "6px",
+    "radius-md": "8px",
+    "radius-lg": "12px",
+    "radius-xl": "16px",
     "radius-pill": "999px"
   },
   "components": [
@@ -124,6 +148,7 @@
     "carousel",
     "chart",
     "checkbox",
+    "code-window",
     "collapsible",
     "combobox",
     "command",
@@ -136,6 +161,7 @@
     "field",
     "form",
     "hover-card",
+    "icon-chip",
     "input",
     "input-group",
     "input-otp",
@@ -159,6 +185,7 @@
     "slider",
     "sonner",
     "spinner",
+    "status-pill",
     "switch",
     "table",
     "tabs",
@@ -181,7 +208,8 @@
     ],
     "cta": [
       "cta1",
-      "cta2"
+      "cta2",
+      "cta3"
     ],
     "faq": [
       "faq1",
@@ -199,17 +227,20 @@
       "feature9"
     ],
     "footer": [
-      "footer1"
+      "footer1",
+      "footer2"
     ],
     "header": [
-      "header1"
+      "header1",
+      "header2"
     ],
     "hero": [
       "hero1",
       "hero2",
       "hero3",
       "hero4",
-      "hero5"
+      "hero5",
+      "hero6"
     ],
     "pricing": [
       "pricing1",
@@ -228,192 +259,183 @@
       "download": "brand/reference/brand/assets/logo",
       "variants": [
         {
-          "id": "h-color-ondark",
-          "label": "Horizontal — colour on dark",
-          "file": "brand/reference/brand/assets/logo/logo-h-color-ondark.svg",
-          "bg": "dark",
-          "primary": true
-        },
-        {
-          "id": "h-color-onlight",
-          "label": "Horizontal — colour on light",
-          "file": "brand/reference/brand/assets/logo/logo-h-color-onlight.svg",
+          "id": "h-wordmark-onlight",
+          "label": "Horizontal — wordmark on light",
+          "file": "brand/reference/brand/assets/logo/wordmark.svg",
           "bg": "light",
           "primary": true
         },
         {
-          "id": "h-white",
-          "label": "Horizontal — white",
-          "file": "brand/reference/brand/assets/logo/logo-h-white.svg",
+          "id": "h-wordmark-ondark",
+          "label": "Horizontal — wordmark on night",
+          "file": "brand/reference/brand/assets/logo/wordmark-night.svg",
           "bg": "dark"
         },
         {
-          "id": "h-black",
-          "label": "Horizontal — black",
-          "file": "brand/reference/brand/assets/logo/logo-h-black.svg",
-          "bg": "light"
+          "id": "v-mark-onlight",
+          "label": "Mark — on light",
+          "file": "brand/reference/brand/assets/logo/mark.svg",
+          "bg": "light",
+          "primary": true
         },
         {
-          "id": "h-yellow-ondark",
-          "label": "Horizontal — yellow on dark",
-          "file": "brand/reference/brand/assets/logo/logo-h-yellow-ondark.svg",
+          "id": "v-mark-ondark",
+          "label": "Mark — on night",
+          "file": "brand/reference/brand/assets/logo/mark-night.svg",
           "bg": "dark"
-        },
-        {
-          "id": "h-yellow-onlight",
-          "label": "Horizontal — yellow on light",
-          "file": "brand/reference/brand/assets/logo/logo-h-yellow-onlight.svg",
-          "bg": "light"
-        },
-        {
-          "id": "v-purple-ondark",
-          "label": "Vertical — purple on dark",
-          "file": "brand/reference/brand/assets/logo/logo-v-purple-ondark.svg",
-          "bg": "dark"
-        },
-        {
-          "id": "v-purple-onlight",
-          "label": "Vertical — purple on light",
-          "file": "brand/reference/brand/assets/logo/logo-v-purple-onlight.svg",
-          "bg": "light"
-        },
-        {
-          "id": "v-white",
-          "label": "Vertical — white",
-          "file": "brand/reference/brand/assets/logo/logo-v-white.svg",
-          "bg": "dark"
-        },
-        {
-          "id": "v-black",
-          "label": "Vertical — black",
-          "file": "brand/reference/brand/assets/logo/logo-v-black.svg",
-          "bg": "light"
-        },
-        {
-          "id": "v-yellow-ondark",
-          "label": "Vertical — yellow on dark",
-          "file": "brand/reference/brand/assets/logo/logo-v-yellow-ondark.svg",
-          "bg": "dark"
-        },
-        {
-          "id": "v-yellow-onlight",
-          "label": "Vertical — yellow on light",
-          "file": "brand/reference/brand/assets/logo/logo-v-yellow-onlight.svg",
-          "bg": "light"
         }
       ]
     },
     "colors": {
       "groups": [
         {
-          "id": "brand",
-          "label": "Brand purples",
+          "id": "surfaces",
+          "label": "Ink & paper",
           "items": [
             {
-              "name": "Deep purple",
-              "token": "color-deep-purple",
-              "usage": "Default dark canvas.",
-              "hex": "#120C16",
-              "rgb": "rgb(18, 12, 22)",
-              "cmyk": "cmyk(18, 45, 0, 91)"
+              "name": "Ink",
+              "token": "color-ink",
+              "usage": "Primary text and the loudest pixel — primary CTAs on light.",
+              "hex": "#0B0D12",
+              "rgb": "rgb(11, 13, 18)",
+              "cmyk": "cmyk(39, 28, 0, 93)"
             },
             {
-              "name": "Primary purple",
-              "token": "color-primary-purple",
-              "usage": "The brand colour — CTAs, links, active.",
-              "hex": "#8100D0",
-              "rgb": "rgb(129, 0, 208)",
-              "cmyk": "cmyk(38, 100, 0, 18)"
+              "name": "Paper",
+              "token": "color-paper",
+              "usage": "The light canvas. Cool paper, faint blue cast.",
+              "hex": "#FAFBFD",
+              "rgb": "rgb(250, 251, 253)",
+              "cmyk": "cmyk(1, 1, 0, 1)"
             },
-            {
-              "name": "Primary purple deep",
-              "token": "color-primary-purple-deep",
-              "usage": "Hover / active state.",
-              "hex": "#6800A8",
-              "rgb": "rgb(104, 0, 168)",
-              "cmyk": "cmyk(38, 100, 0, 34)"
-            },
-            {
-              "name": "Mid purple",
-              "token": "color-mid-purple",
-              "usage": "Glow, focus ring, strand highlights.",
-              "hex": "#C669FF",
-              "rgb": "rgb(198, 105, 255)",
-              "cmyk": "cmyk(22, 59, 0, 0)"
-            },
-            {
-              "name": "Light purple",
-              "token": "color-light-purple",
-              "usage": "Light-mode surfaces and cards.",
-              "hex": "#E8D8F0",
-              "rgb": "rgb(232, 216, 240)",
-              "cmyk": "cmyk(3, 10, 0, 6)"
-            }
-          ]
-        },
-        {
-          "id": "accents",
-          "label": "Accents",
-          "items": [
-            {
-              "name": "Yellow",
-              "token": "color-yellow",
-              "usage": "A rare single mark. Never a second brand colour.",
-              "hex": "#FFEF3D",
-              "rgb": "rgb(255, 239, 61)",
-              "cmyk": "cmyk(0, 6, 76, 0)"
-            },
-            {
-              "name": "UI green",
-              "token": "color-ui-green",
-              "usage": "Product status only — uptime, checks, active.",
-              "hex": "#03D000",
-              "rgb": "rgb(3, 208, 0)",
-              "cmyk": "cmyk(99, 0, 100, 18)"
-            }
-          ]
-        },
-        {
-          "id": "neutrals",
-          "label": "Neutrals & surfaces",
-          "items": [
             {
               "name": "White",
               "token": "color-white",
-              "usage": "Text on dark; negative space on light.",
+              "usage": "Cards and figure surfaces — one step above paper.",
               "hex": "#FFFFFF",
               "rgb": "rgb(255, 255, 255)",
               "cmyk": "cmyk(0, 0, 0, 0)"
             },
             {
-              "name": "Surface dark",
-              "token": "color-surface-dark",
-              "usage": "Raised cards / panels on the dark canvas.",
-              "hex": "#1C1422",
-              "rgb": "rgb(28, 20, 34)",
-              "cmyk": "cmyk(18, 41, 0, 87)"
+              "name": "Deep paper",
+              "token": "color-deep-paper",
+              "usage": "Inset wells: code windows, terminal shells.",
+              "hex": "#F1F4F9",
+              "rgb": "rgb(241, 244, 249)",
+              "cmyk": "cmyk(3, 2, 0, 2)"
             },
             {
-              "name": "Line dark",
-              "token": "color-line-dark",
-              "usage": "Hairline rules, borders, dividers on dark.",
-              "hex": "#2A2230",
-              "rgb": "rgb(42, 34, 48)",
-              "cmyk": "cmyk(13, 29, 0, 81)"
+              "name": "Mist",
+              "token": "color-mist",
+              "usage": "Hairline borders and dividers. Depth without shadows.",
+              "hex": "#E7EAF1",
+              "rgb": "rgb(231, 234, 241)",
+              "cmyk": "cmyk(4, 3, 0, 5)"
+            }
+          ]
+        },
+        {
+          "id": "text",
+          "label": "Text neutrals",
+          "items": [
+            {
+              "name": "Slate",
+              "token": "color-slate",
+              "usage": "Secondary text — captions, nav labels.",
+              "hex": "#4A5462",
+              "rgb": "rgb(74, 84, 98)",
+              "cmyk": "cmyk(24, 14, 0, 62)"
             },
             {
-              "name": "Muted on dark",
-              "token": "color-muted-on-dark",
-              "usage": "Secondary / caption text on deep purple.",
-              "hex": "#B7A9C2",
-              "rgb": "rgb(183, 169, 194)",
-              "cmyk": "cmyk(6, 13, 0, 24)"
+              "name": "Ash",
+              "token": "color-ash",
+              "usage": "Tertiary text, footer copy, disabled labels.",
+              "hex": "#8A93A1",
+              "rgb": "rgb(138, 147, 161)",
+              "cmyk": "cmyk(14, 9, 0, 37)"
+            }
+          ]
+        },
+        {
+          "id": "signature",
+          "label": "Wire indigo",
+          "items": [
+            {
+              "name": "Indigo",
+              "token": "color-indigo",
+              "usage": "The signature — links, focus ring, selected. Scarce by rule.",
+              "hex": "#4D5BF5",
+              "rgb": "rgb(77, 91, 245)",
+              "cmyk": "cmyk(69, 63, 0, 4)"
+            },
+            {
+              "name": "Indigo deep",
+              "token": "color-indigo-deep",
+              "usage": "Hover / active state. A state, not a second brand colour.",
+              "hex": "#3A46CC",
+              "rgb": "rgb(58, 70, 204)",
+              "cmyk": "cmyk(72, 66, 0, 20)"
+            },
+            {
+              "name": "Indigo wash",
+              "token": "color-indigo-wash",
+              "usage": "Subtle tint surfaces — chips, selected rows, washes.",
+              "hex": "#EEF0FE",
+              "rgb": "rgb(238, 240, 254)",
+              "cmyk": "cmyk(6, 6, 0, 0)"
+            }
+          ]
+        },
+        {
+          "id": "night",
+          "label": "Night (dark mode)",
+          "items": [
+            {
+              "name": "Night",
+              "token": "color-night",
+              "usage": "Dark canvas — ink as a surface.",
+              "hex": "#0B0D12",
+              "rgb": "rgb(11, 13, 18)",
+              "cmyk": "cmyk(39, 28, 0, 93)"
+            },
+            {
+              "name": "Night raised",
+              "token": "color-night-raised",
+              "usage": "Dark cards, one luminance step up.",
+              "hex": "#151923",
+              "rgb": "rgb(21, 25, 35)",
+              "cmyk": "cmyk(40, 29, 0, 86)"
+            },
+            {
+              "name": "Night deep",
+              "token": "color-night-deep",
+              "usage": "Dark code wells — cooler and darker than canvas.",
+              "hex": "#07090E",
+              "rgb": "rgb(7, 9, 14)",
+              "cmyk": "cmyk(50, 36, 0, 95)"
+            },
+            {
+              "name": "Line night",
+              "token": "color-line-night",
+              "usage": "Hairlines on dark.",
+              "hex": "#252B38",
+              "rgb": "rgb(37, 43, 56)",
+              "cmyk": "cmyk(34, 23, 0, 78)"
+            },
+            {
+              "name": "Paper on night",
+              "token": "color-paper-on-night",
+              "usage": "Primary text on dark; the dark mode's brightest pixel (primary CTA).",
+              "hex": "#F5F7FB",
+              "rgb": "rgb(245, 247, 251)",
+              "cmyk": "cmyk(2, 2, 0, 2)"
             }
           ]
         }
       ],
       "ramps": [
-        "purple",
+        "indigo",
+        "blue",
         "red",
         "yellow",
         "green",
@@ -421,28 +443,36 @@
       ]
     },
     "typography": {
-      "download": "brand/reference/brand/assets/fonts/Graphik",
+      "download": "brand/reference/brand/assets/fonts",
       "faces": [
         {
-          "family": "Graphik",
-          "role": "Display + body",
+          "family": "Fraunces",
+          "role": "Display — hero and section headlines only",
+          "weights": [
+            400,
+            500
+          ],
+          "source": "@fontsource/fraunces (shipped via the kit's styles import)"
+        },
+        {
+          "family": "Inter",
+          "role": "Body + UI — everything that isn't a headline or code",
           "weights": [
             400,
             500,
             600,
             700
           ],
-          "source": "Shipped in @staywirekit/ui (fonts.css)"
+          "source": "@fontsource/inter (shipped via the kit's styles import)"
         },
         {
-          "family": "DM Sans",
-          "role": "Open-source fallback",
+          "family": "JetBrains Mono",
+          "role": "Code wells, inline code, delivery-log figures",
           "weights": [
             400,
-            500,
-            700
+            500
           ],
-          "source": "Google Fonts"
+          "source": "@fontsource/jetbrains-mono (shipped via the kit's styles import)"
         }
       ],
       "styles": [
@@ -451,24 +481,24 @@
           "label": "Display (D1)",
           "token": "display",
           "face": "display",
-          "weight": 500,
-          "sample": "The Co-operation Network"
+          "weight": 400,
+          "sample": "The booking wire."
         },
         {
           "id": "headline",
-          "label": "Heading (H1)",
+          "label": "Headline (H1)",
           "token": "headline",
           "face": "display",
-          "weight": 500,
-          "sample": "The internet was built for co-operation. It's always been at its best when people create, connect, and collaborate together."
+          "weight": 400,
+          "sample": "Direct bookings, confirmed on the wire."
         },
         {
           "id": "title",
           "label": "Title (H2)",
           "token": "title",
-          "face": "display",
-          "weight": 500,
-          "sample": "Open by design. Built around you."
+          "face": "sans",
+          "weight": 600,
+          "sample": "Book, confirm, deliver."
         },
         {
           "id": "body",
@@ -476,7 +506,7 @@
           "token": "body",
           "face": "sans",
           "weight": 400,
-          "sample": "The internet was made for sharing: invitations, information, inspiration — kernels of connected ideas that light up when more people join in. With every connection comes a chance to build something bigger together. It all starts with the network, the literal cables that connect IRL and URL."
+          "sample": "staywire is the engine between a property's website and a confirmed guest. Availability, quotes, and bookings ride one public API — the same one the admin, the embed, and booking agents use. Double-booking is impossible at the database layer, so the copy never has to hedge."
         },
         {
           "id": "label",
@@ -484,41 +514,41 @@
           "token": "label",
           "face": "sans",
           "weight": 500,
-          "sample": "› Canada's co-operation network"
+          "sample": "Status: confirmed"
+        },
+        {
+          "id": "body-lg",
+          "label": "Body large",
+          "token": "body-lg",
+          "face": "sans",
+          "weight": 400,
+          "sample": "The best way to take a booking is directly — on your own site, at your own rates."
+        },
+        {
+          "id": "caption",
+          "label": "Caption",
+          "token": "caption",
+          "face": "sans",
+          "weight": 400,
+          "sample": "Rates shown in the property's currency. Taxes itemized at quote time."
+        },
+        {
+          "id": "code",
+          "label": "Code",
+          "token": "code",
+          "face": "mono",
+          "weight": 400,
+          "sample": "POST /v1/bookings → 201 { \"reference\": \"SW-4F7K2X\" }"
         }
       ]
     },
     "art": {
-      "name": "Flow lines",
-      "description": "The brand art — fibre strands drawn as light. Stills for backgrounds and print; motion for hero moments.",
-      "stills": [
-        "brand/reference/brand/assets/flow-lines/still/1.png",
-        "brand/reference/brand/assets/flow-lines/still/2.png",
-        "brand/reference/brand/assets/flow-lines/still/3.png",
-        "brand/reference/brand/assets/flow-lines/still/4.png"
-      ],
-      "motion": [
-        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-66.mp4",
-        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-66-yellow.mp4",
-        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-67.mp4",
-        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-67-yellow.mp4",
-        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-68.mp4",
-        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-68-yellow.mp4",
-        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-70.mp4",
-        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-70-yellow.mp4"
-      ]
+      "name": "Wire fields",
+      "description": "No art assets ship yet — the art direction (thin wire strokes with node dots, drawn in mist/indigo on paper) is specified but blocked on a brand drop. Every surface must degrade gracefully to pure typography.",
+      "stills": [],
+      "motion": []
     },
     "resources": [
-      {
-        "label": "Atomic brand system",
-        "type": "figma",
-        "url": "https://www.figma.com/design/bkBYMkh5sbW80R2AIK9ugK/Staywire-ABS?node-id=21478-696"
-      },
-      {
-        "label": "Creative direction presentation",
-        "type": "figma",
-        "url": "https://www.figma.com/design/bkBYMkh5sbW80R2AIK9ugK/Staywire-ABS?node-id=21478-5647"
-      },
       {
         "label": "Brand guide",
         "type": "web",
@@ -530,9 +560,9 @@
         "url": "https://staywirekit-site.vercel.app"
       },
       {
-        "label": "ToolKit guidelines",
+        "label": "Product",
         "type": "web",
-        "url": "https://app.brandtoolk.it/guidelines/staywire"
+        "url": "https://staywire-api.vercel.app/docs"
       }
     ],
     "downloads": [
@@ -541,22 +571,14 @@
         "path": "brand/reference/brand/assets/logo"
       },
       {
-        "label": "Font files",
-        "path": "brand/reference/brand/assets/fonts/Graphik"
-      },
-      {
-        "label": "Flow lines — stills",
-        "path": "brand/reference/brand/assets/flow-lines/still"
-      },
-      {
-        "label": "Flow lines — motion",
-        "path": "brand/reference/brand/assets/flow-lines/motion"
+        "label": "Fonts",
+        "path": "brand/reference/brand/assets/fonts"
       }
     ]
   },
   "voice": {
     "source": "brand/reference/brand/voice.md",
-    "summary": "The verbal identity for anything that carries the Staywire name — website, brochures, decks, emails, social, sales conversations. Built on one word: *co-operation*. Plain, confident, sentence-case. We speak each room's language and never speak telecom. The category banner is *Canada's co-operation network*; the sign-off is *Open by design. Built around you.* This document derives from [[strategy]] and the [[Staywire ABS-2026-05-28|atomic brand system]]."
+    "summary": null
   },
   "docs": {
     "index": "brand/reference/brand/INDEX.md",
@@ -567,54 +589,13 @@
   },
   "assets": {
     "logos": [
-      "brand/reference/brand/assets/logo/logo-h-black.svg",
-      "brand/reference/brand/assets/logo/logo-h-color-ondark.svg",
-      "brand/reference/brand/assets/logo/logo-h-color-onlight.svg",
-      "brand/reference/brand/assets/logo/logo-h-white.svg",
-      "brand/reference/brand/assets/logo/logo-h-yellow-ondark.svg",
-      "brand/reference/brand/assets/logo/logo-h-yellow-onlight.svg",
-      "brand/reference/brand/assets/logo/logo-v-black.svg",
-      "brand/reference/brand/assets/logo/logo-v-purple-ondark.svg",
-      "brand/reference/brand/assets/logo/logo-v-purple-onlight.svg",
-      "brand/reference/brand/assets/logo/logo-v-white.svg",
-      "brand/reference/brand/assets/logo/logo-v-yellow-ondark.svg",
-      "brand/reference/brand/assets/logo/logo-v-yellow-onlight.svg"
+      "brand/reference/brand/assets/logo/mark-night.svg",
+      "brand/reference/brand/assets/logo/mark.svg",
+      "brand/reference/brand/assets/logo/wordmark-night.svg",
+      "brand/reference/brand/assets/logo/wordmark.svg"
     ],
-    "fonts": [
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-Black.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-BlackItalic.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-Bold.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-BoldItalic.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-Extralight.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-ExtralightItalic.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-Light.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-LightItalic.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-Medium.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-MediumItalic.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-Regular.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-RegularItalic.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-Semibold.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-SemiboldItalic.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-Super.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-SuperItalic.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-Thin.otf",
-      "brand/reference/brand/assets/fonts/Graphik/Graphik-ThinItalic.otf"
-    ],
-    "flowLinesStill": [
-      "brand/reference/brand/assets/flow-lines/still/1.png",
-      "brand/reference/brand/assets/flow-lines/still/2.png",
-      "brand/reference/brand/assets/flow-lines/still/3.png",
-      "brand/reference/brand/assets/flow-lines/still/4.png"
-    ],
-    "flowLinesMotion": [
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-66-yellow.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-66.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-67-yellow.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-67.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-68-yellow.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-68.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-70-yellow.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-70.mp4"
-    ]
+    "fonts": [],
+    "flowLinesStill": [],
+    "flowLinesMotion": []
   }
 }

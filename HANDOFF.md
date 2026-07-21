@@ -6,7 +6,7 @@
 - **Brand:** staywirekit (based on staywire)
 - **Version:** 0.2.1
 - **Status:** populated
-- **Generated:** 2026-07-20T22:24:49.659Z
+- **Generated:** 2026-07-21T10:52:57.799Z
 
 ## Tokens
 
@@ -14,7 +14,7 @@ Machine-readable token map lives in [`brand.json`](./brand.json) (`tokens`) and
 [`packages/tokens/dist/tokens.flat.json`](./packages/tokens/dist/tokens.flat.json).
 Source of truth: [`packages/tokens/tokens.json`](./packages/tokens/tokens.json) (W3C DTCG).
 
-86 resolved tokens.
+108 resolved tokens.
 
 ## Components
 
@@ -32,6 +32,7 @@ Source of truth: [`packages/tokens/tokens.json`](./packages/tokens/tokens.json) 
 - `carousel`
 - `chart`
 - `checkbox`
+- `code-window`
 - `collapsible`
 - `combobox`
 - `command`
@@ -44,6 +45,7 @@ Source of truth: [`packages/tokens/tokens.json`](./packages/tokens/tokens.json) 
 - `field`
 - `form`
 - `hover-card`
+- `icon-chip`
 - `input`
 - `input-group`
 - `input-otp`
@@ -67,6 +69,7 @@ Source of truth: [`packages/tokens/tokens.json`](./packages/tokens/tokens.json) 
 - `slider`
 - `sonner`
 - `spinner`
+- `status-pill`
 - `switch`
 - `table`
 - `tabs`
@@ -83,12 +86,12 @@ built on the component suite above, in `packages/ui/src/blocks/<category>/`:
 - **blog**: `blog1`, `blog2`
 - **case**: `case1`, `case2`
 - **contact**: `contact1`
-- **cta**: `cta1`, `cta2`
+- **cta**: `cta1`, `cta2`, `cta3`
 - **faq**: `faq1`, `faq2`
 - **feature**: `feature1`, `feature2`, `feature3`, `feature4`, `feature5`, `feature6`, `feature7`, `feature8`, `feature9`
-- **footer**: `footer1`
-- **header**: `header1`
-- **hero**: `hero1`, `hero2`, `hero3`, `hero4`, `hero5`
+- **footer**: `footer1`, `footer2`
+- **header**: `header1`, `header2`
+- **hero**: `hero1`, `hero2`, `hero3`, `hero4`, `hero5`, `hero6`
 - **pricing**: `pricing1`, `pricing2`
 - **stats**: `stats1`, `stats2`
 - **testimonials**: `testimonials1`
@@ -102,7 +105,7 @@ The MCP server serves the same data via `get_guidelines` / `get_logo`.
 
 ## Voice & tone
 
-The verbal identity for anything that carries the Staywire name — website, brochures, decks, emails, social, sales conversations. Built on one word: *co-operation*. Plain, confident, sentence-case. We speak each room's language and never speak telecom. The category banner is *Canada's co-operation network*; the sign-off is *Open by design. Built around you.* This document derives from [[strategy]] and the [[Staywire ABS-2026-05-28|atomic brand system]].
+null
 
 Full doc: [`brand/reference/brand/voice.md`](./brand/reference/brand/voice.md)
 
