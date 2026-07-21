@@ -16,11 +16,11 @@ export interface Feature8Props {
 }
 
 export const Feature8 = ({
-  badge = "Platform",
-  title = "Watch your fibre become an asset",
-  description = "Every active subscription in the building shows up as a recurring share you can see. Track providers, subscribers, and payouts in one dashboard — what was once a cost becomes an asset that pays dividends.",
+  badge = "Admin",
+  title = "The morning in one glance",
+  description = "The day sheet lists arrivals, departures, and stayovers before housekeeping starts. Refunds, policies, and booking answers sit one click away — no spreadsheet in sight.",
   items = Array.from({ length: 5 }, (_, index) => ({
-    label: `Dashboard preview ${index + 1}`,
+    label: `Day sheet preview ${index + 1}`,
   })),
 }: Feature8Props = {}) => (
   <div className="w-full py-section">

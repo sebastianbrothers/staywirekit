@@ -23,43 +23,43 @@ export interface Pricing2Props {
 }
 
 export const Pricing2 = ({
-  badge = "Plans",
-  title = "Plans on the open network",
-  description = "Every provider gets the same terms, at every tier.",
+  badge = "Pricing",
+  title = "One flat rate per property",
+  description = "Same engine at every tier. Pay when you go live.",
   tiers = [
     {
-      name: "Starter",
+      name: "Test",
       description:
-        "For providers testing the network. Reach your first buildings with no construction and no capex.",
-      price: "$40",
+        "For builders trying the wire. One property in test mode, with the full API and all six MCP tools.",
+      price: "$0",
       period: "/ month",
-      cta: "Join",
+      cta: "Start building",
     },
     {
-      name: "Growth",
+      name: "Live",
       description:
-        "For providers growing across the network. Same wholesale, same access, no preferred placement.",
-      price: "$40",
-      period: "/ month",
-      cta: "Join",
+        "For a property taking real bookings. One flat rate per live property, every feature, no per-booking fees.",
+      price: "$29",
+      period: "/ property / month",
+      cta: "Go live",
     },
     {
-      name: "National",
+      name: "Portfolio",
       description:
-        "For providers serving buildings across Canada. Equal terms at every address on the network.",
-      price: "$40",
-      period: "/ month",
+        "For groups running several properties. Custom terms, one account across every stay you operate.",
+      price: "Custom",
+      period: "",
       cta: "Talk to us",
     },
   ],
   featuresLabel = "Features",
   rows = [
-    { label: "API", cells: [true, true, true] },
-    { label: "Wholesale access", cells: [false, true, true] },
-    { label: "Equal placement", cells: [false, true, true] },
-    { label: "Buildings", cells: ["5 buildings", "25 buildings", "100+ buildings"] },
-    { label: "Resident self-signup", cells: [false, true, true] },
-    { label: "Usage reporting", cells: [false, true, true] },
+    { label: "REST API", cells: [true, true, true] },
+    { label: "MCP server (six tools)", cells: [true, true, true] },
+    { label: "Live bookings", cells: [false, true, true] },
+    { label: "Properties", cells: ["1, test mode", "1 per plan", "Unlimited"] },
+    { label: "Signed webhooks", cells: [true, true, true] },
+    { label: "Housekeeping day-sheet", cells: [false, true, true] },
   ],
 }: Pricing2Props = {}) => (
   <div className="w-full py-section">

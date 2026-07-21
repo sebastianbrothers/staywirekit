@@ -12,11 +12,11 @@ export interface CTA2Props {
 }
 
 export const CTA2 = ({
-  badge = "Get started",
-  title = "Turn your fibre into an asset",
-  description = "One network, every provider on equal terms, residents online the day they move in. Your building keeps the asset and shares the value. Open by design. Built around you.",
-  secondaryCta = "Book a walkthrough",
-  primaryCta = "Get in touch",
+  badge = "Go live",
+  title = "Put bookings on your site",
+  description = "Quotes hold their price for 15 minutes, with taxes itemized. Refunds compute from the policy snapshot the guest agreed to. You keep the guest relationship; staywire keeps the ledger straight.",
+  secondaryCta = "Book a demo",
+  primaryCta = "Talk to us",
 }: CTA2Props = {}) => (
   <div className="w-full py-section bg-muted">
     <div className="container mx-auto">

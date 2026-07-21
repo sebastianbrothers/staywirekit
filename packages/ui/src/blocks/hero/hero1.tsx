@@ -11,11 +11,11 @@ export interface Hero1Props {
 }
 
 export const Hero1 = ({
-  announcement = "Read the staywire story",
-  title = "Canada's co-operation network",
-  description = "Neutral, open-access fibre for multi-family buildings. Owners keep the fibre asset and earn recurring revenue. Any provider can serve residents on equal terms. And residents are online the day they move in.",
-  secondaryCta = "Talk to us",
-  primaryCta = "See how it works",
+  announcement = "Explore the staywire API",
+  title = "Quote, hold, confirm",
+  description = "staywire is the REST API between your product and a confirmed stay. Request a quote, hold the price for 15 minutes, confirm the booking — double-booking is impossible at the database layer. Signed, replayable webhooks tell your systems the moment anything changes.",
+  secondaryCta = "Read the docs",
+  primaryCta = "Start building",
 }: Hero1Props = {}) => (
   <div className="w-full">
     <div className="container mx-auto">

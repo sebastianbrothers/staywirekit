@@ -19,49 +19,49 @@ export interface FAQ1Props {
 
 export const FAQ1 = ({
   badge = "FAQ",
-  title = "Questions about the co-operation network",
-  description = "Owners, providers, and residents ask us the same fair questions. Here are plain answers about who owns the fibre, how providers join, and what changes on move-in day.",
-  cta = "Have a question? Talk to us",
+  title = "Questions about the booking wire",
+  description = "Owners, engineers, and agent builders ask us the same fair questions. Here are plain answers about double-bookings, quotes, refunds, and what happens on the wire.",
+  cta = "Talk to us",
   items = [
     {
-      question: "Who owns the fibre in my building?",
+      question: "Can staywire double-book a room?",
       answer:
-        "The building does. Staywire designs, builds, and operates the network, but the fibre stays on the owner's balance sheet as an asset. You keep your fibre. We just run it — and the building earns a recurring share of revenue as residents subscribe.",
+        "No. Availability is enforced at the database layer, so two confirmed bookings can never hold the same room for the same nights. It's a constraint, not a cleanup job — there is no code path around it.",
     },
     {
-      question: "How does a provider join the network?",
+      question: "How long does a quote hold its price?",
       answer:
-        "Any qualified internet provider can ride the network — no construction, no capex. Once onboarded, a provider gets the same ordering and activation access as everyone else and appears on the resident menu the same day. Reaching a full building becomes a sign-up, not a build.",
+        "Fifteen minutes. When you request a quote, price and availability lock, so the total a guest sees is the total they pay at confirmation. If the lock expires, you request a fresh quote.",
     },
     {
-      question: "What does move-in day look like for residents?",
+      question: "How are refunds calculated?",
       answer:
-        "The connection is live when the keys are handed over. Residents pick a provider from a simple menu — it takes about a minute — and they're online. No technician visit, no waiting window, no starting the internet search from scratch.",
+        "Against the policy in force when the guest booked. Staywire snapshots your cancellation policy on every booking, so changing it later never changes what an existing guest is owed.",
     },
     {
-      question: "Does any provider get a better deal than another?",
+      question: "How do I know a webhook came from staywire?",
       answer:
-        "No. Every provider pays the same wholesale rate, gets the same access, and holds the same placement on the resident menu. No exclusive deals. No preferred placement. No better deal for anyone. That neutrality is the structure, not a promise.",
+        "Every webhook is signed. Verify the signature with your endpoint secret and you know the event came from us and wasn't altered in transit.",
     },
     {
-      question: "How does the install fit into our construction schedule?",
+      question: "Can an AI agent book on a guest's behalf?",
       answer:
-        "We sequence into the GC's schedule, off the critical path. One accountable partner from design to handover — drawings, a responsibility matrix, and milestones up front, coordinated with your electrical and low-voltage trades. It never becomes the site team's problem.",
+        "Yes. The MCP server exposes six tools that cover search, quotes, and bookings, so a voice or chat agent can complete a stay end to end. The same locks and constraints apply — an agent can't oversell a room any more than your website can.",
     },
     {
-      question: "What happens with resident data?",
+      question: "What does housekeeping get?",
       answer:
-        "Residents are the providers' customers, not ours — billing and account data stay with the provider they choose. Staywire handles only what's needed to run the network, and the owner gets clear reporting rights on network revenue, not on residents.",
+        "A day-sheet: who arrives, who departs, and which rooms turn over today. It reads from live bookings, so it's never a stale copy.",
     },
     {
-      question: "What do the agreement terms look like?",
+      question: "Do I need to rebuild my website?",
       answer:
-        "Simple and non-exclusive, with clear exit, transfer, and reporting rights the owner can actually read. Revenue is a recurring share tied to active subscribers, so it grows with occupancy. No lock-in for the building, and no selling the residents' choice for a cheaper monthly line.",
+        "No. Staywire is API-first — it sits behind whatever site you already run. Your pages call the REST API, and guests never leave your domain.",
     },
     {
-      question: "What happens if staywire goes away?",
+      question: "What does it cost to start?",
       answer:
-        "The building keeps the fibre — it was always yours. Because the network is built on open standards and the asset never leaves your balance sheet, another operator can step in and run it. We're a guest in your building, and the arrangement is designed to outlast us.",
+        "Nothing. One property in test mode is free, with the full API. You pay a flat monthly rate per property only when you go live, and portfolios get custom terms.",
     },
   ],
 }: FAQ1Props = {}) => (

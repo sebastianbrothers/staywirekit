@@ -17,29 +17,29 @@ const cardClassNames = [
 ];
 
 export const Feature6 = ({
-  badge = "The network",
-  title = "Neutral by design",
-  description = "Multiple providers. One network. Everyone on equal terms.",
+  badge = "For agents",
+  title = "Your engine speaks MCP",
+  description = "Six tools. Any MCP client. Bookings on a guest's behalf.",
   items = [
     {
-      title: "One shared fibre network",
+      title: "Six tools, whole journey",
       description:
-        "The building is wired once. Every provider reaches every suite on the same line.",
+        "check_availability, quote_stay, create_booking, cancel_booking, list_bookings, get_booking.",
     },
     {
-      title: "A neutral host",
+      title: "The same engine underneath",
       description:
-        "We run the network and never sell internet, so no provider gets an edge.",
+        "Agents hit the same API as your website — same locks, same constraints.",
     },
     {
-      title: "Open on equal terms",
+      title: "Quotes agents can trust",
       description:
-        "No exclusive deals. No preferred placement. No better deal for anyone.",
+        "Every quote returns itemized taxes and the cancellation policy in one payload.",
     },
     {
-      title: "Shared infrastructure",
+      title: "Safe to let loose",
       description:
-        "Owners earn from the asset, providers reach residents, and residents get real choice.",
+        "An agent can't double-book a room. The database won't let anyone.",
     },
   ],
 }: Feature6Props = {}) => (

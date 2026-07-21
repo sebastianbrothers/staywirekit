@@ -10,33 +10,33 @@ export interface Feature2Props {
 }
 
 export const Feature2 = ({
-  badge = "For ISPs",
-  title = "Open to every ISP",
-  description = "Co-operate with the open network, not the hardware.",
+  badge = "For engineers",
+  title = "One API, every surface",
+  description = "Admin, embed, and the hosted booking page call the same REST endpoints you do.",
   items = [
     {
-      title: "No construction",
-      description: "Serve residents on fibre that's already built.",
+      title: "Availability with reasons",
+      description: "Every unavailable night returns a structured reason, never a silent omission.",
     },
     {
-      title: "No capex to enter",
-      description: "Reach new buildings without new builds.",
+      title: "Quotes that hold",
+      description: "A quote locks its price for 15 minutes, taxes itemized, policy attached.",
     },
     {
-      title: "Equal terms for all",
-      description: "Same wholesale rate for every provider.",
+      title: "Collision-proof bookings",
+      description: "A Postgres exclusion constraint makes double-booking impossible at the database layer.",
     },
     {
-      title: "No gatekeeping",
-      description: "No preferred placement. No better deal for anyone.",
+      title: "A policy snapshot per booking",
+      description: "Refunds are computed from the policy the guest actually accepted.",
     },
     {
-      title: "A level playing field",
-      description: "Staywire never competes with its providers.",
+      title: "An event log underneath",
+      description: "Webhooks are signed and replayable, delivered from the log in order.",
     },
     {
-      title: "Lower cost to acquire",
-      description: "Residents choose from day one — lower CAC.",
+      title: "Six MCP tools",
+      description: "Agents check, quote, book, cancel, and look up stays on your behalf.",
     },
   ],
 }: Feature2Props = {}) => (

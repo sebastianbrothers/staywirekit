@@ -11,20 +11,20 @@ export interface Feature1Props {
 
 export const Feature1 = ({
   badge = "For owners",
-  title = "Fibre that pays",
-  description = "You keep your fibre. We just run it.",
+  title = "The calendar runs itself",
+  description = "You run the house. The engine keeps the calendar honest.",
   items = [
     {
-      title: "New revenue",
-      description: "A share of every subscription, every month.",
+      title: "Double-booking, impossible",
+      description: "The database refuses overlapping stays. Not policy — a Postgres constraint.",
     },
     {
-      title: "NOI that grows",
-      description: "Revenue scales as your building fills.",
+      title: "A day sheet each morning",
+      description: "Arrivals, departures, and stayovers on one printable sheet.",
     },
     {
-      title: "An asset, not a cost",
-      description: "The fibre stays on your balance sheet.",
+      title: "Refunds without arguments",
+      description: "Every booking keeps the policy it was sold under. Refunds follow that snapshot.",
     },
   ],
 }: Feature1Props = {}) => (

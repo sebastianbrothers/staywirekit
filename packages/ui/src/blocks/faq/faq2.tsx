@@ -20,48 +20,48 @@ export interface FAQ2Props {
 export const FAQ2 = ({
   badge = "FAQ",
   title = "Fair questions, plain answers",
-  description = "The co-operation network is new to Canada, so questions are fair. Here are plain answers for owners, providers, and residents — no telecom translation needed.",
-  cta = "Still curious? Talk to us",
+  description = "A booking engine you talk to over an API raises fair questions. Here are plain answers for owners, engineers, and the agents booking on guests' behalf.",
+  cta = "Talk to us",
   items = [
     {
-      question: "Can any provider join the network?",
+      question: "What is staywire, exactly?",
       answer:
-        "Yes. The network is neutral and open-access by design. Every provider gets the same wholesale rate, the same access, and the same placement in the resident menu. No exclusive deals. No preferred placement. No better deal for anyone.",
+        "A booking engine behind an API. Your website, voice agent, or channel calls it to check availability, quote a stay, and confirm a booking. The API is the product — there's no widget to bolt on.",
     },
     {
-      question: "Does staywire sell internet to residents?",
+      question: "Is double-booking really impossible?",
       answer:
-        "No, and we never will. We run the network; the providers sell the service. The moment a neutral host competes with the providers on its own network, neutrality becomes a lie — so we don't. We host the network. We don't sell the internet.",
+        "Yes, at the database layer. Two confirmed bookings can't hold the same room for the same nights — the conflicting write is rejected before it lands. No sync jobs, no race windows.",
     },
     {
-      question: "What does this cost the building?",
+      question: "What happens when a quote expires?",
       answer:
-        "Funding is flexible: developer-funded, shared, or fully staywire-funded. Either way the owner keeps the fibre and earns a recurring revenue share tied to active subscribers. This isn't a bulk deal that lowers a monthly line — it's an asset that pays the building back.",
+        "The 15-minute lock releases and the room returns to open inventory. Request a new quote and you get current price and availability. Nothing is ever charged on an expired quote.",
     },
     {
-      question: "How do residents choose a provider?",
+      question: "Can I change my cancellation policy?",
       answer:
-        "From a simple menu, the day they move in. Every provider on the building's network is listed on equal footing — same placement, no featured picks. Residents compare, choose, and they're online. No technician visit needed.",
+        "Anytime, for future bookings. Existing bookings keep a snapshot of the policy they were made under, so guests are refunded by the rules they agreed to.",
     },
     {
-      question: "Can residents switch providers later?",
+      question: "How do webhooks work?",
       answer:
-        "Anytime. Switching happens on the same menu and takes minutes, because every provider is already connected to the suite. That's what choice looks like when the network is shared — no rewiring, no transfer fees from us, no winning provider locking the door behind them.",
+        "You register an endpoint and staywire sends signed events — bookings, cancellations, payments. Check the signature against your secret before you trust the payload.",
     },
     {
-      question: "Has this model worked anywhere else?",
+      question: "What can agents do over MCP?",
       answer:
-        "Open-access networks already connect hundreds of millions of people in other countries. What's new is bringing the model to Canadian multi-family buildings — which we're doing one building at a time, with names and numbers you can check rather than claims you have to take on faith.",
+        "The MCP server ships six tools — enough to search availability, quote a stay, and manage a booking end to end. An agent gets the same guarantees your website does, including the no-double-booking constraint.",
     },
     {
-      question: "Who do residents call when something breaks?",
+      question: "How does housekeeping stay in sync?",
       answer:
-        "Their provider handles service and account questions, the way it should be. Behind that, staywire operates the shared network to a service-level commitment — monitoring, maintenance, and repairs are our job, not the building manager's and not the resident's.",
+        "The day-sheet reads from live bookings — arrivals, departures, and turnovers for the day. Cancel a stay and the sheet updates with it.",
     },
     {
-      question: "What happens at the end of the agreement?",
+      question: "What does it cost?",
       answer:
-        "The owner keeps the fibre — that never changes. The agreement is non-exclusive with clear exit and transfer rights, so the building can renew, bring in another operator, or run the network itself. We earn our place every day; we don't lock the building in.",
+        "Free for one property in test mode. A flat monthly rate per live property, custom terms for portfolios. No per-booking fees.",
     },
   ],
 }: FAQ2Props = {}) => (

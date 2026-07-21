@@ -16,56 +16,56 @@ export interface Footer1Props {
 
 export const Footer1 = ({
   title = "staywire™",
-  tagline = "Open by design. Built around you.",
-  addressLines = ["123 Water Street", "Vancouver", "BC V6B 1B2"],
+  tagline = "The booking wire for independent stays.",
+  addressLines = ["560 Johnson Street", "Victoria", "BC V8W 3C6"],
   termsLabel = "Terms of service",
   privacyLabel = "Privacy policy",
   navigationItems = [
     {
-      title: "Home",
-      href: "/",
+      title: "Product",
+      href: "/product",
       description: "",
     },
     {
-      title: "The network",
-      description: "Neutral, open-access fibre the building owns and earns from.",
+      title: "Developers",
+      description: "REST API, MCP server, signed webhooks.",
       items: [
         {
-          title: "Overview",
-          href: "/reports",
+          title: "Documentation",
+          href: "/docs",
         },
         {
-          title: "How it works",
-          href: "/statistics",
+          title: "API reference",
+          href: "/docs/api",
         },
         {
-          title: "Neutrality",
-          href: "/dashboards",
+          title: "MCP server",
+          href: "/docs/mcp",
         },
         {
-          title: "Revenue share",
-          href: "/recordings",
+          title: "Webhooks",
+          href: "/docs/webhooks",
         },
       ],
     },
     {
-      title: "Who it's for",
-      description: "One network, shared fairly by owners, providers, and residents.",
+      title: "Company",
+      description: "Built for small independent lodging.",
       items: [
         {
-          title: "Owners",
+          title: "About",
           href: "/about",
         },
         {
-          title: "Providers",
-          href: "/fundraising",
+          title: "Pricing",
+          href: "/pricing",
         },
         {
-          title: "Residents",
-          href: "/investors",
+          title: "Blog",
+          href: "/blog",
         },
         {
-          title: "Builders",
+          title: "Contact",
           href: "/contact",
         },
       ],

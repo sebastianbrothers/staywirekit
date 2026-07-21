@@ -10,49 +10,49 @@ export interface Feature7Props {
 }
 
 export const Feature7 = ({
-  badge = "Platform",
-  title = "One network for all",
-  description = "Shared infrastructure. Shared value.",
+  badge = "The engine",
+  title = "Every surface, one wire",
+  description = "Admin, embed, hosted booking, and MCP run on the same API.",
   items = [
     {
-      title: "Owners keep the fibre",
+      title: "The API",
       description:
-        "The network stays your asset and pays a recurring share as residents subscribe.",
+        "REST endpoints for availability, quotes, bookings, cancellations, and refunds.",
     },
     {
-      title: "Revenue you can report",
+      title: "The embed",
       description:
-        "Subscriber counts, payouts, and audit rights in one place — numbers you can stand behind.",
+        "Guests book on your website without leaving it.",
     },
     {
-      title: "Providers join, not build",
+      title: "The hosted page",
       description:
-        "Any ISP can serve the building with no construction and no capital outlay.",
+        "A booking page that works before you have a website.",
     },
     {
-      title: "Neutrality, enforced",
+      title: "The admin",
       description:
-        "Same wholesale, same access. We never compete with the providers on our network.",
+        "Calendar, bookings, and refunds without the noise.",
     },
     {
-      title: "Built into your schedule",
+      title: "The day sheet",
       description:
-        "Drawings, milestones, and one accountable partner — sequenced off the critical path.",
+        "Housekeeping's morning view — arrivals, departures, stayovers.",
     },
     {
-      title: "Live at move-in",
+      title: "The webhooks",
       description:
-        "Residents are online the day they move in and can switch providers anytime.",
+        "Signed, replayable deliveries from a single event log.",
     },
     {
-      title: "Wired once, done right",
+      title: "The agents",
       description:
-        "One fibre plant serves the whole building, so nobody pulls duplicate cable later.",
+        "Six MCP tools so assistants can book on a guest's behalf.",
     },
     {
-      title: "Run by a fair host",
+      title: "The coverage page",
       description:
-        "We operate the network for everyone and earn our place in the building every day.",
+        "A live page that shows the engine's health, uptime in the open.",
     },
   ],
 }: Feature7Props = {}) => (

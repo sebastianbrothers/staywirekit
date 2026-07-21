@@ -17,20 +17,20 @@ export const Blog2 = ({
   byLabel = "By",
   author = "The staywire team",
   featured = {
-    title: "Who should own the fibre?",
+    title: "Double-bookings are a schema problem",
     description:
-      "In most buildings the network belongs to a carrier, and the building pays for it forever. There is another way: the owner keeps the fibre as an asset, and it earns recurring revenue that grows with occupancy.",
+      "Most engines treat overbooking as a sync problem and chase it with jobs and alerts. There is a stricter way: enforce availability at the database layer, so a conflicting booking is rejected before it ever lands.",
   },
   articles = [
     {
-      title: "What open access means",
+      title: "What a quote lock buys you",
       description:
-        "Open access is a simple idea: any provider can serve residents on the same network, on equal terms. No exclusive deals, no preferred placement, no better deal for anyone — and real choice for the people who live there.",
+        "A quote holds price and availability for 15 minutes. The guest sees one number and pays that number — no drift between search and checkout, no awkward repricing email.",
     },
     {
-      title: "Five rooms, five languages",
+      title: "Letting agents book your rooms",
       description:
-        "A developer hears pro forma. A provider hears reach without construction. A resident hears move-in day. Same deal, five rooms, five languages — how we talk about co-operation with everyone a building touches.",
+        "A voice or chat agent can search, quote, and confirm a stay over MCP — six tools, end to end. It runs on the same rails as your website, so it can't oversell a room.",
     },
   ],
 }: Blog2Props = {}) => (

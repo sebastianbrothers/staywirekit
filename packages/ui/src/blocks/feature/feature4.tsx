@@ -8,9 +8,9 @@ export interface Feature4Props {
 }
 
 export const Feature4 = ({
-  badge = "Builders",
-  title = "One accountable partner, off the critical path",
-  description = "You have enough trades to sequence. We arrive with drawings, a responsibility matrix, and milestones that fit your schedule — one point of contact from rough-in to handover, and no surprises at the finish.",
+  badge = "Webhooks",
+  title = "Events you can replay",
+  description = "Every booking, cancellation, and refund writes to an event log first. Webhooks arrive signed and replayable — if your endpoint was down, you missed nothing.",
 }: Feature4Props = {}) => (
   <div className="w-full py-section">
     <div className="container mx-auto">

@@ -10,14 +10,14 @@ export interface Stats2Props {
 }
 
 export const Stats2 = ({
-  badge = "The network",
-  title = "Canada's co-operation network",
-  description = "Neutral, open-access fibre for multi-family buildings. Owners keep the asset and earn recurring revenue, any provider can serve residents on equal terms, and residents are online the day they move in.",
+  badge = "The engine",
+  title = "Numbers from the wire",
+  description = "One API confirms the stay, locks the quote, and delivers every event to your systems. The engine keeps score in the open — here's what it reports.",
   stats = [
-    { value: "500.000", delta: "+20.1%", label: "Units online day one" },
-    { value: "20.105", delta: "-2%", label: "Active subscriptions" },
-    { value: "$523.520", delta: "+8%", label: "Owner revenue share" },
-    { value: "$1052", delta: "+2%", label: "Annual revenue per door" },
+    { value: "312.408", delta: "+18%", label: "Nights confirmed through the API" },
+    { value: "180ms", delta: "-22ms", label: "p50 quote, taxes itemized" },
+    { value: "15 min", delta: "±0", label: "Quote lock, policy attached" },
+    { value: "0", delta: "±0", label: "Double-bookings stored, ever" },
   ],
 }: Stats2Props = {}) => (
   <div className="w-full py-section">

@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { CTA1 } from "./cta1";
 import { CTA2 } from "./cta2";
+import { Cta3 } from "./cta3";
 
 const meta: Meta = {
   title: "Blocks/CTA",

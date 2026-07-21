@@ -26,48 +26,48 @@ export interface Pricing1Props {
 
 const defaultFeatures = [
   {
-    title: "Wholesale access",
-    description: "One rate for every provider on the network.",
+    title: "No double-bookings",
+    description: "Conflicting bookings are rejected at the database layer.",
   },
   {
-    title: "Equal placement",
-    description: "No preferred spot in the resident menu.",
+    title: "15-minute quote locks",
+    description: "The price a guest sees is the price they pay.",
   },
   {
-    title: "Resident self-signup",
-    description: "Residents pick a provider from a simple menu.",
+    title: "Signed webhooks",
+    description: "Verify every event before you trust it.",
   },
 ];
 
 export const Pricing1 = ({
-  badge = "Plans",
-  title = "Plans on the open network",
-  description = "Any provider can serve residents on equal terms.",
+  badge = "Pricing",
+  title = "One flat rate per property",
+  description = "Start free in test mode. Pay when you go live.",
   tiers = [
     {
-      name: "Starter",
+      name: "Test",
       description:
-        "For providers testing the network. Reach your first buildings with no construction and no capex.",
-      price: "$40",
+        "For builders trying the wire. One property in test mode, with the full API and all six MCP tools.",
+      price: "$0",
       period: "/ month",
       features: defaultFeatures,
-      cta: "Join the network",
+      cta: "Start building",
     },
     {
-      name: "Growth",
+      name: "Live",
       description:
-        "For providers growing across the network. Same wholesale, same access, no preferred placement.",
-      price: "$40",
-      period: "/ month",
+        "For a property taking real bookings. One flat rate per live property, every feature, no per-booking fees.",
+      price: "$29",
+      period: "/ property / month",
       features: defaultFeatures,
-      cta: "Join the network",
+      cta: "Go live",
     },
     {
-      name: "National",
+      name: "Portfolio",
       description:
-        "For providers serving buildings across Canada. Equal terms at every address on the network.",
-      price: "$40",
-      period: "/ month",
+        "For groups running several properties. Custom terms, one account across every stay you operate.",
+      price: "Custom",
+      period: "",
       features: defaultFeatures,
       cta: "Talk to us",
     },

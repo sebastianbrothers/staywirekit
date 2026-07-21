@@ -15,7 +15,7 @@ export interface Case2Props {
 }
 
 export const Case2 = ({
-  title = "New to Canada, proven globally",
+  title = "Booked through staywire",
   logos = Array.from({ length: 25 }, (_, index) => ({
     label: `Logo ${index + 1}`,
   })),

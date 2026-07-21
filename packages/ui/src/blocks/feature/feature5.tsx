@@ -9,39 +9,39 @@ export interface Feature5Props {
 }
 
 export const Feature5 = ({
-  badge = "Residents",
-  title = "Online on day one",
-  description = "Choice is what happens when networks co-operate.",
+  badge = "For guests",
+  title = "From search to stay",
+  description = "The hosted booking page, built for small independent stays.",
   items = [
     {
-      title: "Internet from move-in day",
+      title: "Real availability",
       description:
-        "Your connection is live the day you get your keys. No waiting, no tech visit.",
+        "The calendar shows what's actually free, straight from the engine. No stale nights.",
     },
     {
-      title: "Pick from real choices",
+      title: "A price that stands still",
       description:
-        "Several providers serve your building on the same fibre. Compare and choose.",
+        "Your quote holds for 15 minutes with every tax itemized. No surprises at payment.",
     },
     {
-      title: "Switch anytime",
+      title: "Confirmation that arrives",
       description:
-        "Changing providers takes minutes from a simple menu — no rewiring, no penalty.",
+        "The booking confirms in one step and the email lands right behind it.",
     },
     {
-      title: "Prices kept honest",
+      title: "Cancel without a phone call",
       description:
-        "When providers share one network, they compete on service and price.",
+        "The policy you booked under is the policy you cancel under.",
     },
     {
-      title: "One fibre, no clutter",
+      title: "No double-booked rooms",
       description:
-        "The building is wired once, properly. Every provider uses the same line.",
+        "The engine can't sell the same night twice. Nobody arrives to a taken bed.",
     },
     {
-      title: "Help that answers",
+      title: "One page, no account",
       description:
-        "Your provider supports you; we keep the network itself running quietly.",
+        "Book as a guest on any device. No login, no app to install.",
     },
   ],
 }: Feature5Props = {}) => (

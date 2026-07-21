@@ -22,18 +22,13 @@ export function IconChip({
   className,
   ...props
 }: IconChipProps) {
-  const Comp: React.ElementType = isStatic ? "div" : "button";
-  return (
-    <Comp
-      {...(!isStatic ? { type: "button" } : {})}
-      data-slot="icon-chip"
-      data-selected={selected || undefined}
-      className={cn(
-        "group flex w-16 flex-col items-center gap-2 bg-transparent",
-        className
-      )}
-      {...props}
-    >
+  const rootProps = {
+    "data-slot": "icon-chip",
+    "data-selected": selected || undefined,
+    className: cn("group flex w-16 flex-col items-center gap-2 bg-transparent", className),
+  };
+  const Inner = (
+    <>
       <span
         className={cn(
           "flex size-14 items-center justify-center rounded-lg border bg-card text-foreground transition-colors",
@@ -52,6 +47,14 @@ export function IconChip({
       >
         {label}
       </span>
-    </Comp>
+    </>
+  );
+  if (isStatic) {
+    return <div {...rootProps}>{Inner}</div>;
+  }
+  return (
+    <button type="button" {...rootProps} {...props}>
+      {Inner}
+    </button>
   );
 }

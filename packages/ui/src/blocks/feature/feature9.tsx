@@ -12,9 +12,9 @@ export interface Feature9Props {
 }
 
 export const Feature9 = ({
-  badge = "The network",
-  title = "See both sides",
-  description = "Owners earn from it. Residents choose on it. Drag to compare.",
+  badge = "The engine",
+  title = "Both sides of the wire",
+  description = "Guests see the booking page. You see the admin. Drag to compare.",
 }: Feature9Props = {}) => {
   const [inset, setInset] = useState<number>(50);
   const [onMouseDown, setOnMouseDown] = useState<boolean>(false);

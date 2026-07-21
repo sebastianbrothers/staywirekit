@@ -12,11 +12,11 @@ export interface Hero4Props {
 }
 
 export const Hero4 = ({
-  badge = "For providers",
-  title = "Multiple providers. One network.",
-  description = "When ISPs co-operate, the internet gets better for everyone. Reach new buildings with no construction and no capex, on a neutral network. No exclusive deals. No preferred placement. No better deal for anyone.",
+  badge = "For agents",
+  title = "Book on a guest's behalf",
+  description = "The staywire MCP server gives your agent the same wire the website uses: quote, hold, confirm. A voice agent can take the call and book the stay end to end, and every hold carries itemized taxes and a snapshot of the cancellation policy.",
   secondaryCta = "Talk to us",
-  primaryCta = "See how it works",
+  primaryCta = "Connect your agent",
 }: Hero4Props = {}) => (
   <div className="w-full py-section">
     <div className="container mx-auto">

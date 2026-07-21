@@ -19,14 +19,14 @@ export interface Hero5Props {
 
 // Module-level so the default keeps a stable identity across renders — it sits in
 // the rotation effect's dep array, and a fresh array each render would reset the timer.
-const defaultTitles = ["shared", "open", "neutral", "everyone's", "yours"];
+const defaultTitles = ["exact", "signed", "replayable", "calm", "yours"];
 
 export const Hero5 = ({
-  announcement = "Read the full manifesto",
-  title = "The network should be",
+  announcement = "Read how the wire works",
+  title = "The booking wire is",
   titles = defaultTitles,
-  description = "The internet was built for co-operation — kernels of connected ideas that light up when more people join in. We build the fibre networks that carry that idea into buildings, so owners, providers, and residents all share the value.",
-  secondaryCta = "Book a walkthrough",
+  description = "A double-sold room, a drifted price, a webhook that never landed — bookings fail in quiet ways. staywire removes each one: the database refuses conflicting reservations, your quotes hold their price for 15 minutes, and every webhook is signed and replayable.",
+  secondaryCta = "Book a demo",
   primaryCta = "Talk to us",
 }: Hero5Props = {}) => {
   const [titleNumber, setTitleNumber] = useState(0);

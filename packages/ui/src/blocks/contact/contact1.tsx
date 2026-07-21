@@ -28,29 +28,29 @@ export interface Contact1Props {
 
 export const Contact1 = ({
   badge = "Contact",
-  title = "Book a walkthrough",
-  description = "Staywire is Canada's co-operation network. See how one open, neutral network turns your building's fibre into an asset that pays you back.",
+  title = "Book a demo",
+  description = "Staywire is the booking wire for small independent stays. See how one API takes your property from search to confirmed booking.",
   features = [
     {
-      title: "Own the fibre",
-      description: "Your building keeps the asset and earns from it.",
+      title: "No double-bookings",
+      description: "Conflicting bookings are rejected at the database layer.",
     },
     {
-      title: "Open to any provider",
-      description: "No exclusive deals. Every provider gets equal terms.",
+      title: "Quotes that hold",
+      description: "Price and availability lock for 15 minutes.",
     },
     {
-      title: "Online from day one",
-      description: "Residents are online the day they move in.",
+      title: "Built for agents",
+      description: "Six MCP tools let voice and chat agents book stays.",
     },
   ],
-  formTitle = "Book a walkthrough",
+  formTitle = "Book a demo",
   dateLabel = "Date",
   datePlaceholder = "Pick a date",
   firstNameLabel = "First name",
   lastNameLabel = "Last name",
-  fileLabel = "Building plans",
-  cta = "Book a walkthrough",
+  fileLabel = "Rate sheet",
+  cta = "Book a demo",
 }: Contact1Props = {}) => {
   const [date, setDate] = useState<Date | undefined>(new Date());
 

@@ -13,10 +13,10 @@ export interface CTA1Props {
 
 export const CTA1 = ({
   badge = "Get started",
-  title = "Put your fibre to work",
-  description = "Owners keep the fibre asset and earn recurring revenue. Providers reach residents on equal terms. Residents are online the day they move in. Open by design. Built around you.",
-  secondaryCta = "Book a walkthrough",
-  primaryCta = "Talk to us",
+  title = "Take your first booking",
+  description = "Wire your site to the booking engine in an afternoon. Guests book in three clicks; you get a calm admin and a price that holds. Double-booking is impossible at the database layer.",
+  secondaryCta = "Read the docs",
+  primaryCta = "Start building",
 }: CTA1Props = {}) => (
   <div className="w-full py-section">
     <div className="container mx-auto">

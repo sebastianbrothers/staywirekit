@@ -7,10 +7,10 @@ export interface Stats1Props {
 
 export const Stats1 = ({
   stats = [
-    { value: "500.000", delta: "+20.1%", label: "Units online day one" },
-    { value: "20.105", delta: "-2%", label: "Active subscriptions" },
-    { value: "$523.520", delta: "+8%", label: "Owner revenue share" },
-    { value: "$1052", delta: "+2%", label: "Annual revenue per door" },
+    { value: "312.408", delta: "+18%", label: "Nights confirmed through the API" },
+    { value: "180ms", delta: "-22ms", label: "p50 quote response" },
+    { value: "0", delta: "±0", label: "Double-bookings stored, ever" },
+    { value: "6", delta: "±0", label: "MCP tools, availability to refund" },
   ],
 }: Stats1Props = {}) => (
   <div className="w-full py-section">

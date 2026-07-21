@@ -18,44 +18,44 @@ export interface Testimonials1Props {
 }
 
 export const Testimonials1 = ({
-  title = "Voices from every room of the building",
+  title = "What independent stays say",
   byLabel = "By",
   items = [
     {
-      title: "It just worked",
+      title: "No more double-bookings",
       quote:
-        "The internet was on the day we moved in. No technician, no waiting — I picked a provider from a menu in about a minute.",
-      author: "Maya, resident",
+        "We once had two families arrive for the same room. Since the switch, the database simply won't allow it — I stopped checking the calendar at night.",
+      author: "Elena, guest-house owner in Victoria",
     },
     {
-      title: "A cost became an asset",
+      title: "The quote is the price",
       quote:
-        "Internet used to be a line we gave away to whoever wired the building first. Now the fibre is ours and it pays us every month.",
-      author: "Priya, property manager",
+        "Guests used to call about totals changing at checkout. Now a quote holds for 15 minutes and the number they see is the number they pay.",
+      author: "Marguerite, B&B host in Lunenburg",
     },
     {
-      title: "A whole building, no construction",
+      title: "Integrated in a weekend",
       quote:
-        "We reached every suite in a new building without digging or capex. Same terms as everyone else on the network — that's all we ever asked for.",
-      author: "Daniel, ISP founder",
+        "The REST API is small and predictable. Our own booking page was live on a Saturday, webhooks verified by Sunday.",
+      author: "Sam, developer in Squamish",
     },
     {
-      title: "An NOI line that scales",
+      title: "Our phone agent books stays",
       quote:
-        "The revenue share grows with occupancy, and the exit and reporting rights are ones I can actually read. It underwrites like parking, not like an amenity.",
-      author: "Janice, REIT asset manager",
+        "We wired the six MCP tools into a voice agent. It quotes, confirms, and never oversells — same rails as the website.",
+      author: "Priya, agent builder in Toronto",
     },
     {
-      title: "Off the critical path, actually",
+      title: "Refunds without arguments",
       quote:
-        "They showed up with drawings and a responsibility matrix, sequenced into our schedule, and never touched the rough-in. That's rare.",
-      author: "Marc, site superintendent",
+        "A guest cancelled under an older policy after we'd tightened ours. Staywire refunded by the policy she booked under, and nobody had to argue.",
+      author: "Don, innkeeper on the Sunshine Coast",
     },
     {
-      title: "Switching took an afternoon",
+      title: "Mornings start with the day-sheet",
       quote:
-        "My old provider raised the price, so I picked a new one from the menu. No cancellation call, no rewiring — same connection, better deal.",
-      author: "Alex, resident",
+        "Housekeeping opens the day-sheet: arrivals, departures, turnovers. It comes straight from live bookings, so it's never wrong.",
+      author: "Ana, inn manager in Tofino",
     },
   ],
 }: Testimonials1Props = {}) => {

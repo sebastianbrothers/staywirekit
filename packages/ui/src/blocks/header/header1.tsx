@@ -21,45 +21,45 @@ export const Header1 = () => {
       description: "",
     },
     {
-      title: "The network",
-      description: "Neutral, open-access fibre the building owns and earns from.",
+      title: "Product",
+      description: "Quote, hold, confirm — the booking engine behind your own site.",
       items: [
         {
           title: "Overview",
           href: "/reports",
         },
         {
-          title: "How it works",
+          title: "How booking works",
           href: "/statistics",
         },
         {
-          title: "Neutrality",
+          title: "The admin",
           href: "/dashboards",
         },
         {
-          title: "Revenue share",
+          title: "Webhooks",
           href: "/recordings",
         },
       ],
     },
     {
       title: "Who it's for",
-      description: "One network, shared fairly by owners, providers, and residents.",
+      description: "One booking wire for owners, engineers, and agents.",
       items: [
         {
           title: "Owners",
           href: "/about",
         },
         {
-          title: "Providers",
+          title: "Engineers",
           href: "/fundraising",
         },
         {
-          title: "Residents",
+          title: "Agents",
           href: "/investors",
         },
         {
-          title: "Builders",
+          title: "Guests",
           href: "/contact",
         },
       ],
@@ -96,7 +96,7 @@ export const Header1 = () => {
                               </p>
                             </div>
                             <Button size="sm" className="mt-10">
-                              Book a walkthrough
+                              Book a demo
                             </Button>
                           </div>
                           <div className="flex flex-col text-sm h-full justify-end">
@@ -129,7 +129,7 @@ export const Header1 = () => {
           </Button>
           <div className="border-r hidden md:inline"></div>
           <Button variant="outline">Sign in</Button>
-          <Button>Get connected</Button>
+          <Button>Start building</Button>
         </div>
         <div className="flex w-12 shrink lg:hidden items-end justify-end">
           <Button variant="ghost" onClick={() => setOpen(!isOpen)}>

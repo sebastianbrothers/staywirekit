@@ -8,9 +8,9 @@ export interface Feature3Props {
 }
 
 export const Feature3 = ({
-  badge = "Asset teams",
-  title = "A revenue line that scales with occupancy",
-  description = "Connectivity used to sit on the cost side. On the co-operation network it becomes a defensible income line: a recurring share tied to active subscribers, with clear reporting, transfer, and audit rights.",
+  badge = "Embed",
+  title = "Booking on your own site",
+  description = "Drop the embed on your website and guests book without leaving the page. It calls the same API as every other surface — live availability, held quotes, confirmed stays.",
 }: Feature3Props = {}) => (
   <div className="w-full py-section">
     <div className="container mx-auto">

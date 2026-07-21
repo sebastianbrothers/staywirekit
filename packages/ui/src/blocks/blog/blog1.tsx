@@ -13,24 +13,24 @@ export const Blog1 = ({
   cta = "View all articles",
   articles = [
     {
-      title: "Who should own the fibre?",
+      title: "Double-bookings are a schema problem",
       description:
-        "The building's network should belong to the building. Owners keep the asset, and it pays them back.",
+        "Overbooking isn't a sync bug to manage. Reject the conflict at the database and it can't happen.",
     },
     {
-      title: "What open access means",
+      title: "What a quote lock buys you",
       description:
-        "Any provider can serve residents on the same network, on equal terms. That choice is the point.",
+        "Fifteen minutes of held price and availability. The total your guest sees is the total they pay.",
     },
     {
-      title: "Five rooms, five languages",
+      title: "Refunds need a policy snapshot",
       description:
-        "Developers, providers, residents — how we talk about co-operation with everyone a building touches.",
+        "Policies change; bookings shouldn't. Snapshot the policy at booking and every refund is settled by it.",
     },
     {
-      title: "Online day one",
+      title: "Letting agents book your rooms",
       description:
-        "No tech visit, no waiting. Residents pick a provider from a simple menu and switch anytime.",
+        "Voice and chat agents can book over MCP. Six tools, same guarantees as your website.",
     },
   ],
 }: Blog1Props = {}) => (
