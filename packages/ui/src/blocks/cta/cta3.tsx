@@ -18,7 +18,7 @@ export const Cta3 = ({
   titleLine1 = "Booking, rewired.",
   titleLine2 = "Live today.",
   primaryCta = "Start building",
-  secondaryCta = "Talk to us",
+  secondaryCta = "Book a demo",
   watermark = "staywire",
 }: Cta3Props = {}) => (
   <div className="relative w-full overflow-hidden">
