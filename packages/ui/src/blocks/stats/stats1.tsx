@@ -32,7 +32,7 @@ export const Stats1 = ({
                 }
               />
             )}
-            <h2 className="text-4xl tracking-tighter max-w-xl text-left font-regular flex flex-row gap-4 items-end">
+            <h2 className="font-display text-headline leading-headline tracking-headline max-w-xl text-left flex flex-row gap-4 items-end">
               {stat.value}
               <span className="text-muted-foreground text-sm tracking-normal">
                 {stat.delta}

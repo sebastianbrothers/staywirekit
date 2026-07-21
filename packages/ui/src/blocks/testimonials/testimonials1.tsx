@@ -82,7 +82,7 @@ export const Testimonials1 = ({
     <div className="w-full py-section">
       <div className="container mx-auto">
         <div className="flex flex-col gap-10">
-          <h2 className="text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left">
+          <h2 className="font-display text-headline leading-headline tracking-headline font-normal lg:max-w-xl text-left">
             {title}
           </h2>
           <Carousel setApi={setApi} className="w-full">
@@ -93,7 +93,7 @@ export const Testimonials1 = ({
                     <User className="w-8 h-8 stroke-1" />
                     <div className="flex flex-col gap-4">
                       <div className="flex flex-col">
-                        <h3 className="text-xl tracking-tight">{item.title}</h3>
+                        <h3 className="text-title leading-title tracking-title font-medium">{item.title}</h3>
                         <p className="text-muted-foreground max-w-xs text-base">
                           {item.quote}
                         </p>

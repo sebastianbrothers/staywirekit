@@ -26,10 +26,10 @@ export const Hero4 = ({
             <Badge variant="outline">{badge}</Badge>
           </div>
           <div className="flex gap-4 flex-col">
-            <h1 className="text-5xl md:text-7xl max-w-lg tracking-tighter text-left font-regular">
+            <h1 className="font-display text-display leading-display tracking-display font-normal max-w-lg  text-left ">
               {title}
             </h1>
-            <p className="text-xl leading-relaxed tracking-tight text-muted-foreground max-w-md text-left">
+            <p className="text-body-lg leading-body-lg text-muted-foreground max-w-md text-left">
               {description}
             </p>
           </div>

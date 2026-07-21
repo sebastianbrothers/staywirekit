@@ -25,10 +25,10 @@ export const Hero2 = ({
           <Badge variant="outline">{badge}</Badge>
         </div>
         <div className="flex gap-4 flex-col">
-          <h1 className="text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular">
+          <h1 className="font-display text-display leading-display tracking-display font-normal max-w-2xl  text-center ">
             {title}
           </h1>
-          <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
+          <p className="text-body-lg leading-body-lg text-muted-foreground max-w-2xl text-center">
             {description}
           </p>
         </div>

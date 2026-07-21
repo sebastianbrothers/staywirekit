@@ -37,7 +37,7 @@ export const Blog1 = ({
   <div className="w-full py-section">
     <div className="container mx-auto flex flex-col gap-14">
       <div className="flex w-full flex-col sm:flex-row sm:justify-between sm:items-center gap-8">
-        <h4 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular">
+        <h4 className="font-display text-headline leading-headline tracking-headline font-normal max-w-xl">
           {title}
         </h4>
         <Button className="gap-4">
@@ -51,7 +51,7 @@ export const Blog1 = ({
             className="flex flex-col gap-2 hover:opacity-75 cursor-pointer"
           >
             <div className="bg-muted rounded-md aspect-video mb-4"></div>
-            <h3 className="text-xl tracking-tight">{article.title}</h3>
+            <h3 className="text-title leading-title tracking-title font-medium">{article.title}</h3>
             <p className="text-muted-foreground text-base">
               {article.description}
             </p>

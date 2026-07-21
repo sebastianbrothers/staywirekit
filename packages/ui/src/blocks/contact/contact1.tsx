@@ -64,10 +64,10 @@ export const Contact1 = ({
                 <Badge>{badge}</Badge>
               </div>
               <div className="flex flex-col gap-2">
-                <h4 className="text-3xl md:text-5xl tracking-tighter max-w-xl text-left font-regular">
+                <h4 className="font-display text-headline leading-headline tracking-headline font-normal max-w-xl text-left">
                   {title}
                 </h4>
-                <p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-sm text-left">
+                <p className="text-body-lg leading-body-lg text-muted-foreground max-w-sm text-left">
                   {description}
                 </p>
               </div>

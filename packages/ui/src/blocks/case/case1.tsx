@@ -43,7 +43,7 @@ export const Case1 = ({
     <div className="w-full py-section">
       <div className="container mx-auto">
         <div className="flex flex-col  gap-10">
-          <h2 className="text-xl md:text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left">
+          <h2 className="font-display text-headline leading-headline tracking-headline font-normal lg:max-w-xl text-left">
             {title}
           </h2>
           <Carousel setApi={setApi} className="w-full">

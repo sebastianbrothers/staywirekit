@@ -37,10 +37,10 @@ export const Feature1 = ({
               <Badge variant="outline">{badge}</Badge>
             </div>
             <div className="flex gap-2 flex-col">
-              <h2 className="text-3xl lg:text-5xl tracking-tighter max-w-xl text-left font-regular">
+              <h2 className="font-display text-headline leading-headline tracking-headline max-w-xl text-left">
                 {title}
               </h2>
-              <p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl text-left">
+              <p className="text-body-lg leading-body-lg text-muted-foreground max-w-xl text-left">
                 {description}
               </p>
             </div>

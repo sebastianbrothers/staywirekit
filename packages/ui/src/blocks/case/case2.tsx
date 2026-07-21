@@ -43,7 +43,7 @@ export const Case2 = ({
     <div className="w-full py-section">
       <div className="container mx-auto">
         <div className="grid grid-cols-5 gap-10 items-center">
-          <h3 className="text-xl tracking-tighter lg:max-w-xl font-regular text-left">
+          <h3 className="text-title leading-title tracking-title font-medium lg:max-w-xl text-left">
             {title}
           </h3>
           <div className="relative w-full col-span-4">

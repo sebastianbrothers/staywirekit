@@ -53,7 +53,7 @@ export const Feature5 = ({
             <Badge>{badge}</Badge>
           </div>
           <div className="flex gap-2 flex-col">
-            <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
+            <h2 className="font-display text-headline leading-headline tracking-headline font-normal max-w-xl text-left">
               {title}
             </h2>
             <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground  text-left">
@@ -65,7 +65,7 @@ export const Feature5 = ({
           {items.map((item, index) => (
             <div key={index} className="flex flex-col gap-2">
               <div className="bg-muted rounded-md aspect-video mb-2"></div>
-              <h3 className="text-xl tracking-tight">{item.title}</h3>
+              <h3 className="text-title leading-title tracking-title font-medium">{item.title}</h3>
               <p className="text-muted-foreground text-base">
                 {item.description}
               </p>

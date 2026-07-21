@@ -78,7 +78,7 @@ export const Footer1 = ({
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div className="flex gap-8 flex-col items-start">
             <div className="flex gap-2 flex-col">
-              <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
+              <h2 className="font-display text-headline leading-headline tracking-headline font-normal max-w-xl text-left">
                 {title}
               </h2>
               <p className="text-lg max-w-lg leading-relaxed tracking-tight text-background/75 text-left">

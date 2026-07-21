@@ -52,7 +52,7 @@ export const Hero5 = ({
             </Button>
           </div>
           <div className="flex gap-4 flex-col">
-            <h1 className="text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular">
+            <h1 className="font-display text-display leading-display tracking-display font-normal max-w-2xl  text-center ">
               <span className="text-spektr-cyan-50">{title}</span>
               <span className="relative flex w-full justify-center overflow-hidden text-center md:pb-4 md:pt-1">
                 &nbsp;
@@ -80,7 +80,7 @@ export const Hero5 = ({
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
+            <p className="text-body-lg leading-body-lg text-muted-foreground max-w-2xl text-center">
               {description}
             </p>
           </div>

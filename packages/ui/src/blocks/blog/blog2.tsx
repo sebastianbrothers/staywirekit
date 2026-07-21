@@ -37,7 +37,7 @@ export const Blog2 = ({
   <div className="w-full py-section">
     <div className="container mx-auto flex flex-col gap-14">
       <div className="flex w-full flex-col sm:flex-row sm:justify-between sm:items-center gap-8">
-        <h4 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular">
+        <h4 className="font-display text-headline leading-headline tracking-headline font-normal max-w-xl">
           {title}
         </h4>
       </div>

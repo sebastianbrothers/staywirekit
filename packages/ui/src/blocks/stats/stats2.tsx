@@ -28,7 +28,7 @@ export const Stats2 = ({
             <Badge>{badge}</Badge>
           </div>
           <div className="flex gap-2 flex-col">
-            <h2 className="text-xl md:text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left">
+            <h2 className="font-display text-headline leading-headline tracking-headline font-normal lg:max-w-xl text-left">
               {title}
             </h2>
             <p className="text-lg lg:max-w-sm leading-relaxed tracking-tight text-muted-foreground text-left">
@@ -48,7 +48,7 @@ export const Stats2 = ({
                 ) : (
                   <MoveUpRight className="w-4 h-4 mb-10 text-primary" />
                 )}
-                <h2 className="text-4xl tracking-tighter max-w-xl text-left font-regular flex flex-row gap-4 items-end">
+                <h2 className="font-display text-headline leading-headline tracking-headline max-w-xl text-left flex flex-row gap-4 items-end">
                   {stat.value}
                   <span className="text-muted-foreground text-sm tracking-normal">
                     {stat.delta}

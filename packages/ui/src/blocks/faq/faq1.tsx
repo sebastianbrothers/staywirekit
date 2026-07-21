@@ -74,7 +74,7 @@ export const FAQ1 = ({
               <Badge variant="outline">{badge}</Badge>
             </div>
             <div className="flex gap-2 flex-col">
-              <h4 className="text-3xl md:text-5xl tracking-tighter max-w-xl text-left font-regular">
+              <h4 className="font-display text-headline leading-headline tracking-headline font-normal max-w-xl text-left">
                 {title}
               </h4>
               <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground  text-left">
