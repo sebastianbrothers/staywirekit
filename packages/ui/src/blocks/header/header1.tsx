@@ -121,7 +121,7 @@ export const Header1 = () => {
           </NavigationMenu>
         </div>
         <div className="flex lg:justify-center">
-          <p className="font-semibold">sendwire</p>
+          <p className="font-semibold">staywire</p>
         </div>
         <div className="flex justify-end w-full gap-4">
           <Button variant="ghost" className="hidden md:inline">

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "sendwire — Canada's co-operation network",
+  title: "staywire — Canada's co-operation network",
   description:
     "Open-access fibre networks that create new revenue, greater efficiency, and real choice for multi-family buildings.",
 };

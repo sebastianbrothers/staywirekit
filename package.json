@@ -1,16 +1,16 @@
 {
-  "name": "sendwirekit",
+  "name": "staywirekit",
   "version": "0.1.0",
   "private": true,
-  "description": "sendwire digital brand kit — tokens, branded shadcn suite, Storybook brand guide, and AI handoff layer",
+  "description": "staywire digital brand kit — tokens, branded shadcn suite, Storybook brand guide, and AI handoff layer",
   "packageManager": "pnpm@10.33.0",
   "scripts": {
     "build": "turbo run build",
-    "build:tokens": "pnpm --filter @sendwirekit/tokens build",
-    "build:handoff": "pnpm --filter @sendwirekit/handoff build",
-    "storybook": "pnpm --filter @sendwirekit/storybook storybook",
-    "build-storybook": "pnpm --filter @sendwirekit/storybook build",
-    "ui:add": "pnpm --filter @sendwirekit/ui ui:add",
+    "build:tokens": "pnpm --filter @staywirekit/tokens build",
+    "build:handoff": "pnpm --filter @staywirekit/handoff build",
+    "storybook": "pnpm --filter @staywirekit/storybook storybook",
+    "build-storybook": "pnpm --filter @staywirekit/storybook build",
+    "ui:add": "pnpm --filter @staywirekit/ui ui:add",
     "lint": "turbo run lint"
   },
   "devDependencies": {

@@ -37,7 +37,7 @@ function ConnectForm() {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input type="email" placeholder="you@sendwire.com" {...field} />
+                <Input type="email" placeholder="you@staywire.com" {...field} />
               </FormControl>
               <FormDescription>We'll only use this to connect to us.</FormDescription>
               <FormMessage />

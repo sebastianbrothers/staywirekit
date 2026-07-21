@@ -1,4 +1,4 @@
-/* The whole design system in one import: Tailwind v4, sendwire token preset,
-   shadcn→sendwire theme mapping, and @source globs for the kit's components
+/* The whole design system in one import: Tailwind v4, staywire token preset,
+   shadcn→staywire theme mapping, and @source globs for the kit's components
    and blocks. This app's own files are auto-detected by Tailwind. */
-@import "@sendwirekit/ui/styles";
+@import "@staywirekit/ui/styles";

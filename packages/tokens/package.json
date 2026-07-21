@@ -1,11 +1,11 @@
 {
-  "name": "@sendwirekit/tokens",
+  "name": "@staywirekit/tokens",
   "version": "0.1.1",
-  "description": "sendwire design tokens — W3C DTCG source of truth + Style Dictionary build",
+  "description": "staywire design tokens — W3C DTCG source of truth + Style Dictionary build",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sebastianbrothers/sendwirekit.git",
+    "url": "https://github.com/sebastianbrothers/staywirekit.git",
     "directory": "packages/tokens"
   },
   "publishConfig": {

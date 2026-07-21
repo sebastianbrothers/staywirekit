@@ -29,14 +29,14 @@ export const FAQ2 = ({
         "Yes. The network is neutral and open-access by design. Every provider gets the same wholesale rate, the same access, and the same placement in the resident menu. No exclusive deals. No preferred placement. No better deal for anyone.",
     },
     {
-      question: "Does sendwire sell internet to residents?",
+      question: "Does staywire sell internet to residents?",
       answer:
         "No, and we never will. We run the network; the providers sell the service. The moment a neutral host competes with the providers on its own network, neutrality becomes a lie — so we don't. We host the network. We don't sell the internet.",
     },
     {
       question: "What does this cost the building?",
       answer:
-        "Funding is flexible: developer-funded, shared, or fully sendwire-funded. Either way the owner keeps the fibre and earns a recurring revenue share tied to active subscribers. This isn't a bulk deal that lowers a monthly line — it's an asset that pays the building back.",
+        "Funding is flexible: developer-funded, shared, or fully staywire-funded. Either way the owner keeps the fibre and earns a recurring revenue share tied to active subscribers. This isn't a bulk deal that lowers a monthly line — it's an asset that pays the building back.",
     },
     {
       question: "How do residents choose a provider?",
@@ -56,7 +56,7 @@ export const FAQ2 = ({
     {
       question: "Who do residents call when something breaks?",
       answer:
-        "Their provider handles service and account questions, the way it should be. Behind that, sendwire operates the shared network to a service-level commitment — monitoring, maintenance, and repairs are our job, not the building manager's and not the resident's.",
+        "Their provider handles service and account questions, the way it should be. Behind that, staywire operates the shared network to a service-level commitment — monitoring, maintenance, and repairs are our job, not the building manager's and not the resident's.",
     },
     {
       question: "What happens at the end of the agreement?",

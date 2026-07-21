@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import React from "react";
-import guidelines from "@sendwirekit/tokens/guidelines.json";
+import guidelines from "@staywirekit/tokens/guidelines.json";
 import { Page, Hero, Section, GroupLabel, Grid, LogoTile, DownloadLink, brandUrl, repoUrl } from "./guide";
 
 const meta: Meta = {

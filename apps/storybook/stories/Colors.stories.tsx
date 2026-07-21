@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import guidelines from "@sendwirekit/tokens/guidelines.json";
-import flat from "@sendwirekit/tokens/flat";
+import guidelines from "@staywirekit/tokens/guidelines.json";
+import flat from "@staywirekit/tokens/flat";
 import { Page, Section, GroupLabel, Grid, SwatchCard, Ramp } from "./guide";
 
 const tokens = flat as Record<string, string>;

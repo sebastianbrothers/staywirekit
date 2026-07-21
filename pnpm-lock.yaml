@@ -20,7 +20,7 @@ importers:
 
   apps/site:
     dependencies:
-      '@sendwirekit/ui':
+      '@staywirekit/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       next:
@@ -51,10 +51,10 @@ importers:
 
   apps/storybook:
     dependencies:
-      '@sendwirekit/tokens':
+      '@staywirekit/tokens':
         specifier: workspace:*
         version: link:../../packages/tokens
-      '@sendwirekit/ui':
+      '@staywirekit/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       react:
@@ -100,7 +100,7 @@ importers:
       '@modelcontextprotocol/sdk':
         specifier: ^1.12.0
         version: 1.29.0(zod@3.25.76)
-      '@sendwirekit/tokens':
+      '@staywirekit/tokens':
         specifier: workspace:*
         version: link:../tokens
       zod:
@@ -130,7 +130,7 @@ importers:
       '@hookform/resolvers':
         specifier: ^5.4.0
         version: 5.4.0(react-hook-form@7.80.0(react@19.2.4))
-      '@sendwirekit/tokens':
+      '@staywirekit/tokens':
         specifier: workspace:*
         version: link:../tokens
       class-variance-authority:

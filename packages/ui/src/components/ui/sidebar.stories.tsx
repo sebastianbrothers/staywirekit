@@ -43,7 +43,7 @@ export const Default: Story = {
       <SidebarProvider>
         <Sidebar collapsible="none">
           <SidebarHeader className="px-4 py-3 text-sm font-semibold">
-            sendwire
+            staywire
           </SidebarHeader>
           <SidebarContent>
             <SidebarGroup>

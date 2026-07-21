@@ -32,7 +32,7 @@ export const Feature2 = ({
     },
     {
       title: "A level playing field",
-      description: "Sendwire never competes with its providers.",
+      description: "Staywire never competes with its providers.",
     },
     {
       title: "Lower cost to acquire",

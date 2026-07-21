@@ -11,7 +11,7 @@ export interface Hero1Props {
 }
 
 export const Hero1 = ({
-  announcement = "Read the sendwire story",
+  announcement = "Read the staywire story",
   title = "Canada's co-operation network",
   description = "Neutral, open-access fibre for multi-family buildings. Owners keep the fibre asset and earn recurring revenue. Any provider can serve residents on equal terms. And residents are online the day they move in.",
   secondaryCta = "Talk to us",

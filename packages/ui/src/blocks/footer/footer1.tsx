@@ -15,7 +15,7 @@ export interface Footer1Props {
 }
 
 export const Footer1 = ({
-  title = "sendwire™",
+  title = "staywire™",
   tagline = "Open by design. Built around you.",
   addressLines = ["123 Water Street", "Vancouver", "BC V6B 1B2"],
   termsLabel = "Terms of service",

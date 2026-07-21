@@ -26,7 +26,7 @@ export const FAQ1 = ({
     {
       question: "Who owns the fibre in my building?",
       answer:
-        "The building does. Sendwire designs, builds, and operates the network, but the fibre stays on the owner's balance sheet as an asset. You keep your fibre. We just run it — and the building earns a recurring share of revenue as residents subscribe.",
+        "The building does. Staywire designs, builds, and operates the network, but the fibre stays on the owner's balance sheet as an asset. You keep your fibre. We just run it — and the building earns a recurring share of revenue as residents subscribe.",
     },
     {
       question: "How does a provider join the network?",
@@ -51,7 +51,7 @@ export const FAQ1 = ({
     {
       question: "What happens with resident data?",
       answer:
-        "Residents are the providers' customers, not ours — billing and account data stay with the provider they choose. Sendwire handles only what's needed to run the network, and the owner gets clear reporting rights on network revenue, not on residents.",
+        "Residents are the providers' customers, not ours — billing and account data stay with the provider they choose. Staywire handles only what's needed to run the network, and the owner gets clear reporting rights on network revenue, not on residents.",
     },
     {
       question: "What do the agreement terms look like?",
@@ -59,7 +59,7 @@ export const FAQ1 = ({
         "Simple and non-exclusive, with clear exit, transfer, and reporting rights the owner can actually read. Revenue is a recurring share tied to active subscribers, so it grows with occupancy. No lock-in for the building, and no selling the residents' choice for a cheaper monthly line.",
     },
     {
-      question: "What happens if sendwire goes away?",
+      question: "What happens if staywire goes away?",
       answer:
         "The building keeps the fibre — it was always yours. Because the network is built on open standards and the asset never leaves your balance sheet, another operator can step in and run it. We're a guest in your building, and the arrangement is designed to outlast us.",
     },

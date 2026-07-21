@@ -15,7 +15,7 @@ export const Blog2 = ({
   title = "Latest articles",
   badge = "News",
   byLabel = "By",
-  author = "The sendwire team",
+  author = "The staywire team",
   featured = {
     title: "Who should own the fibre?",
     description:

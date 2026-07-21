@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button } from "./button";
 
 // Sample story proving the component → Storybook pipeline. Each shadcn component
-// in the sendwire suite should ship one of these. Variants below are shadcn's
+// in the staywire suite should ship one of these. Variants below are shadcn's
 // defaults; they render branded once tokens.json is authored from the upload.
 const meta: Meta<typeof Button> = {
   title: "Components/Button",

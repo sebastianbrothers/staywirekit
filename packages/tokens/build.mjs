@@ -1,4 +1,4 @@
-// Build sendwire design tokens (tokens.json, W3C DTCG) into:
+// Build staywire design tokens (tokens.json, W3C DTCG) into:
 //   dist/globals.css        — standalone Tailwind v4 stylesheet (@import "tailwindcss" + @theme)
 //   dist/preset.css         — the @theme {} block only, for composing into another globals
 //   dist/tokens.flat.json   — resolved flat token map, for the AI handoff

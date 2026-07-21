@@ -50,7 +50,7 @@ export const Group: Story = {
         </ItemMedia>
         <ItemContent>
           <ItemTitle>About</ItemTitle>
-          <ItemDescription>What sendwire is and who it serves.</ItemDescription>
+          <ItemDescription>What staywire is and who it serves.</ItemDescription>
         </ItemContent>
       </Item>
       <ItemSeparator />

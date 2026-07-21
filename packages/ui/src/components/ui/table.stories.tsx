@@ -28,7 +28,7 @@ const buildings = [
 export const Default: Story = {
   render: () => (
     <Table>
-      <TableCaption>Live status across sendwire-managed buildings.</TableCaption>
+      <TableCaption>Live status across staywire-managed buildings.</TableCaption>
       <TableHeader>
         <TableRow>
           <TableHead>Building</TableHead>

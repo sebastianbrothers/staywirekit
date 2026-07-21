@@ -14,7 +14,7 @@ export interface Hero2Props {
 export const Hero2 = ({
   badge = "For owners",
   title = "Your fibre should pay you back",
-  description = "The network in your building has always been a cost. On a sendwire network you build the building, own the fibre, and share the value — recurring revenue that grows with occupancy. You keep your fibre. We just run it.",
+  description = "The network in your building has always been a cost. On a staywire network you build the building, own the fibre, and share the value — recurring revenue that grows with occupancy. You keep your fibre. We just run it.",
   secondaryCta = "Book a walkthrough",
   primaryCta = "Talk to us",
 }: Hero2Props = {}) => (

@@ -28,7 +28,7 @@ export const Default: Story = {
     <div className="w-80">
       <Field>
         <FieldLabel htmlFor="email">Email</FieldLabel>
-        <Input id="email" type="email" placeholder="you@sendwire.com" />
+        <Input id="email" type="email" placeholder="you@staywire.com" />
         <FieldDescription>We'll use this to connect with you.</FieldDescription>
       </Field>
     </div>
@@ -40,7 +40,7 @@ export const WithError: Story = {
     <div className="w-80">
       <Field data-invalid="true">
         <FieldLabel htmlFor="email-err">Email</FieldLabel>
-        <Input id="email-err" type="email" aria-invalid placeholder="you@sendwire.com" />
+        <Input id="email-err" type="email" aria-invalid placeholder="you@staywire.com" />
         <FieldError errors={[{ message: "Enter a valid email address." }]} />
       </Field>
     </div>
@@ -62,7 +62,7 @@ export const Group: Story = {
             <Checkbox id="subscribe" defaultChecked />
             <FieldContent>
               <FieldTitle>Subscribe</FieldTitle>
-              <FieldDescription>Get the weekly Sendwire digest.</FieldDescription>
+              <FieldDescription>Get the weekly Staywire digest.</FieldDescription>
             </FieldContent>
           </Field>
         </FieldGroup>

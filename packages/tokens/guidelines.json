@@ -54,7 +54,7 @@
   "typography": {
     "download": "brand/reference/brand/assets/fonts/Graphik",
     "faces": [
-      { "family": "Graphik", "role": "Display + body", "weights": [400, 500, 600, 700], "source": "Shipped in @sendwirekit/ui (fonts.css)" },
+      { "family": "Graphik", "role": "Display + body", "weights": [400, 500, 600, 700], "source": "Shipped in @staywirekit/ui (fonts.css)" },
       { "family": "DM Sans", "role": "Open-source fallback", "weights": [400, 500, 700], "source": "Google Fonts" }
     ],
     "styles": [
@@ -75,22 +75,22 @@
       "brand/reference/brand/assets/flow-lines/still/4.png"
     ],
     "motion": [
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-66.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-66-yellow.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-67.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-67-yellow.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-68.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-68-yellow.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-70.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-70-yellow.mp4"
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-66.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-66-yellow.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-67.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-67-yellow.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-68.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-68-yellow.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-70.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-70-yellow.mp4"
     ]
   },
   "resources": [
-    { "label": "Atomic brand system", "type": "figma", "url": "https://www.figma.com/design/bkBYMkh5sbW80R2AIK9ugK/Sendwire-ABS?node-id=21478-696" },
-    { "label": "Creative direction presentation", "type": "figma", "url": "https://www.figma.com/design/bkBYMkh5sbW80R2AIK9ugK/Sendwire-ABS?node-id=21478-5647" },
-    { "label": "Brand guide", "type": "web", "url": "https://sendwirekit-storybook.vercel.app" },
-    { "label": "Reference site", "type": "web", "url": "https://sendwirekit-site.vercel.app" },
-    { "label": "ToolKit guidelines", "type": "web", "url": "https://app.brandtoolk.it/guidelines/sendwire" }
+    { "label": "Atomic brand system", "type": "figma", "url": "https://www.figma.com/design/bkBYMkh5sbW80R2AIK9ugK/Staywire-ABS?node-id=21478-696" },
+    { "label": "Creative direction presentation", "type": "figma", "url": "https://www.figma.com/design/bkBYMkh5sbW80R2AIK9ugK/Staywire-ABS?node-id=21478-5647" },
+    { "label": "Brand guide", "type": "web", "url": "https://staywirekit-storybook.vercel.app" },
+    { "label": "Reference site", "type": "web", "url": "https://staywirekit-site.vercel.app" },
+    { "label": "ToolKit guidelines", "type": "web", "url": "https://app.brandtoolk.it/guidelines/staywire" }
   ],
   "downloads": [
     { "label": "Logo kit", "path": "brand/reference/brand/assets/logo" },

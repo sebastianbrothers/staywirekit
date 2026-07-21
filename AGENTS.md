@@ -1,6 +1,6 @@
-# sendwirekit — agent guide
+# staywirekit — agent guide
 
-You are working in the sendwire digital brand kit. This file is the kit-level guide. The
+You are working in the staywire digital brand kit. This file is the kit-level guide. The
 vendored knowledge base under `brand/` carries its **own** `AGENTS.md` (the KB schema) —
 don't confuse the two. This file governs the kit (tokens, components, Storybook, handoff);
 `brand/AGENTS.md` governs the KB (reference/source/wiki/outputs).
@@ -11,8 +11,8 @@ don't confuse the two. This file governs the kit (tokens, components, Storybook,
 hand-edit generated outputs (`packages/tokens/dist/*`, the root `brand.json`/`HANDOFF.md`).
 Edit `tokens.json`, then rebuild.
 
-All brand content originates from `brand/` (the upload). The sendwire **website** repo
-(`~/Clients/sendwire`) is explicitly **not** a source — keep the streams separate.
+All brand content originates from `brand/` (the upload). The staywire **website** repo
+(`~/Clients/staywire`) is explicitly **not** a source — keep the streams separate.
 
 ## Layout convention
 
@@ -25,7 +25,7 @@ All brand content originates from `brand/` (the upload). The sendwire **website*
 
 1. Author/edit `packages/tokens/tokens.json` (W3C DTCG: `$value` / `$type`).
 2. `pnpm build:tokens` → regenerates `dist/{globals.css, preset.css, tokens.flat.json}`.
-3. `packages/ui` consumes the preset; `src/theme.css` maps shadcn semantic vars → sendwire tokens.
+3. `packages/ui` consumes the preset; `src/theme.css` maps shadcn semantic vars → staywire tokens.
 4. `apps/storybook` renders Foundations + components against the same preset.
 5. `pnpm build:handoff` → assembles root `brand.json` + `HANDOFF.md` from the flat tokens +
    the `ui` component index + voice/tone from `brand/`.
@@ -42,7 +42,7 @@ kit's source. After `ui:add`, rewrite new `@/...` imports to relative paths.
 ## Blocks and consumption rules
 
 - Blocks live in `packages/ui/src/blocks/<category>/` (TWBlocks-derived, MIT), exported
-  as `@sendwirekit/ui/blocks/<category>/<name>`. Copy must follow
+  as `@staywirekit/ui/blocks/<category>/<name>`. Copy must follow
   `brand/reference/brand/voice.md` (sentence case, audience pillars).
 - Any block or component using React hooks must start with `"use client"` — Storybook
   doesn't care but Next.js consumers fail without it.

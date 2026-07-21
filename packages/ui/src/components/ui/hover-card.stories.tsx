@@ -19,7 +19,7 @@ export const Default: Story = {
   render: () => (
     <HoverCard>
       <HoverCardTrigger asChild>
-        <Button variant="link">@sendwire</Button>
+        <Button variant="link">@staywire</Button>
       </HoverCardTrigger>
       <HoverCardContent className="w-72">
         <div className="space-y-1">

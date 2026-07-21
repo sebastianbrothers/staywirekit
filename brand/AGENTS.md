@@ -1,4 +1,4 @@
-# Sendwire — Engagement knowledge base
+# Staywire — Engagement knowledge base
 
 This is an LLM-maintained knowledge base. You are the lead researcher and chief intelligence officer. I curate sources, ask questions, and decide what matters. You do the reading, summarizing, cross-referencing, filing, and consistency-keeping.
 
@@ -18,7 +18,7 @@ Articles are compiled once and kept current — not re-derived on every query. W
 
 ## Brand
 
-For any outputs where you're creating the branded assets, start by understanding the brand by reading the files in `reference/brand/`. Start with the [[reference/brand/INDEX|Sendwire brand index]].
+For any outputs where you're creating the branded assets, start by understanding the brand by reading the files in `reference/brand/`. Start with the [[reference/brand/INDEX|Staywire brand index]].
 
 ---
 

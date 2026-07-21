@@ -1,7 +1,7 @@
 import React from "react";
 
-// Shared presentational helpers for the sendwire brand-guide pages. Airy + readable
-// (inspired by getdesign.md), but sendwire-correct: sentence case, the › chevron
+// Shared presentational helpers for the staywire brand-guide pages. Airy + readable
+// (inspired by getdesign.md), but staywire-correct: sentence case, the › chevron
 // device, no numbered/tracked-uppercase eyebrows. Everything is built from the
 // kit's own design-system utilities (text-*, spacing-*, color-*) — the guide
 // dogfoods the tokens it documents.
@@ -103,7 +103,7 @@ export function Ramp({ name }: { name: string }) {
 export const brandUrl = (repoPath: string) => repoPath.replace("brand/reference/brand/assets", "/brand");
 
 // Repo-relative path → GitHub tree URL (for directory-level "browse the kit" links).
-export const repoUrl = (repoPath: string) => `https://github.com/sebastianbrothers/sendwirekit/tree/main/${repoPath}`;
+export const repoUrl = (repoPath: string) => `https://github.com/sebastianbrothers/staywirekit/tree/main/${repoPath}`;
 
 export const hexToRgbStr = (hex: string) => {
   const h = hex.replace("#", "");

@@ -14,7 +14,7 @@ export interface Hero3Props {
 export const Hero3 = ({
   badge = "For residents",
   title = "Online the day you move in",
-  description = "Choice is what happens when networks co-operate. In a sendwire building your internet works the day you move in — no waiting around for a technician. Pick a provider from a simple menu, and switch anytime.",
+  description = "Choice is what happens when networks co-operate. In a staywire building your internet works the day you move in — no waiting around for a technician. Pick a provider from a simple menu, and switch anytime.",
   secondaryCta = "See how it works",
   primaryCta = "Get connected",
 }: Hero3Props = {}) => (

@@ -29,7 +29,7 @@ export interface Contact1Props {
 export const Contact1 = ({
   badge = "Contact",
   title = "Book a walkthrough",
-  description = "Sendwire is Canada's co-operation network. See how one open, neutral network turns your building's fibre into an asset that pays you back.",
+  description = "Staywire is Canada's co-operation network. See how one open, neutral network turns your building's fibre into an asset that pays you back.",
   features = [
     {
       title: "Own the fibre",

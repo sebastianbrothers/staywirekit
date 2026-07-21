@@ -1,11 +1,11 @@
 {
-  "name": "@sendwirekit/ui",
+  "name": "@staywirekit/ui",
   "version": "0.2.1",
-  "description": "shadcn/ui component suite branded to sendwire",
+  "description": "shadcn/ui component suite branded to staywire",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sebastianbrothers/sendwirekit.git",
+    "url": "https://github.com/sebastianbrothers/staywirekit.git",
     "directory": "packages/ui"
   },
   "publishConfig": {
@@ -28,7 +28,7 @@
   "dependencies": {
     "@base-ui/react": "^1.6.0",
     "@hookform/resolvers": "^5.4.0",
-    "@sendwirekit/tokens": "workspace:*",
+    "@staywirekit/tokens": "workspace:*",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",

@@ -6,7 +6,7 @@ const meta: Meta<typeof Input> = {
   title: "Components/Input",
   component: Input,
   parameters: { layout: "centered" },
-  args: { placeholder: "you@sendwire.com" },
+  args: { placeholder: "you@staywire.com" },
 };
 
 export default meta;
@@ -15,7 +15,7 @@ type Story = StoryObj<typeof Input>;
 export const Default: Story = {};
 
 export const Email: Story = {
-  args: { type: "email", placeholder: "you@sendwire.com" },
+  args: { type: "email", placeholder: "you@staywire.com" },
 };
 
 export const Disabled: Story = {
@@ -26,7 +26,7 @@ export const WithLabel: Story = {
   render: () => (
     <div className="grid w-72 gap-2">
       <Label htmlFor="email">Email</Label>
-      <Input id="email" type="email" placeholder="you@sendwire.com" />
+      <Input id="email" type="email" placeholder="you@staywire.com" />
     </div>
   ),
 };

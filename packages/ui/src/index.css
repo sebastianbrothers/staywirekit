@@ -1,11 +1,11 @@
-/* sendwire-branded shadcn entry stylesheet.
-   Order matters in Tailwind v4: the framework import is first, then the sendwire
+/* staywire-branded shadcn entry stylesheet.
+   Order matters in Tailwind v4: the framework import is first, then the staywire
    token preset (defines --color-*, --spacing-*, etc.), then the shadcn theme
    mapping (consumes those tokens). shadcn `add` may append keyframes/utilities
    below — that's fine. */
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "@sendwirekit/tokens/preset.css";
+@import "@staywirekit/tokens/preset.css";
 @import "./theme.css";
 @import "./fonts.css";
 
@@ -16,7 +16,7 @@
 @source "./components/**/*.{ts,tsx}";
 @source "./blocks/**/*.{ts,tsx}";
 
-/* sendwire layout container. Tailwind v4's bare `container` is width-only (no
+/* staywire layout container. Tailwind v4's bare `container` is width-only (no
    centering, no padding) — blocks and consuming apps expect the v3-style
    behaviour, so the kit defines it: centered, token-driven gutter, 1400px cap. */
 @utility container {

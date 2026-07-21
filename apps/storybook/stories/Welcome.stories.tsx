@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import guidelines from "@sendwirekit/tokens/guidelines.json";
+import guidelines from "@staywirekit/tokens/guidelines.json";
 import { Page, Section, brandUrl, repoUrl } from "./guide";
 
 const heroStill = brandUrl(guidelines.art.stills[1]);
@@ -31,9 +31,9 @@ function Overview() {
           }}
         />
         <div className="relative flex flex-col gap-(--space-md)">
-          <img src={brandUrl("brand/reference/brand/assets/logo/logo-h-white.svg")} alt="sendwire" style={{ width: 132 }} />
+          <img src={brandUrl("brand/reference/brand/assets/logo/logo-h-white.svg")} alt="staywire" style={{ width: 132 }} />
           <h1 className="max-w-[14ch] font-display text-display leading-display tracking-display text-white">
-            The sendwire brand kit.
+            The staywire brand kit.
           </h1>
           <p className="max-w-[48ch] text-body text-white/85">
             Canada&apos;s co-operation network, productized. Open by design. Built around you.
@@ -87,9 +87,9 @@ function Overview() {
       >
         <div className="grid gap-(--space-md)" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))" }}>
           {[
-            ["› Foundations", "Logo, colour, typography, spacing, and the flow-lines art — the rules of the brand, read straight from @sendwirekit/tokens."],
-            ["› Blocks", "Full page sections — heroes, features, pricing, FAQs — written in the sendwire voice and composable into sites."],
-            ["› Components", "The complete shadcn/ui suite themed to sendwire tokens, one story per component."],
+            ["› Foundations", "Logo, colour, typography, spacing, and the flow-lines art — the rules of the brand, read straight from @staywirekit/tokens."],
+            ["› Blocks", "Full page sections — heroes, features, pricing, FAQs — written in the staywire voice and composable into sites."],
+            ["› Components", "The complete shadcn/ui suite themed to staywire tokens, one story per component."],
           ].map(([t, d]) => (
             <div key={t} className="flex flex-col gap-(--space-sm) rounded-lg border border-border bg-card p-(--space-lg)">
               <span className="text-title font-display tracking-title text-card-foreground">{t}</span>

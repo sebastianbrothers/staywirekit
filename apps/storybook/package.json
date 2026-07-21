@@ -1,5 +1,5 @@
 {
-  "name": "@sendwirekit/storybook",
+  "name": "@staywirekit/storybook",
   "version": "0.1.2",
   "private": true,
   "type": "module",
@@ -9,8 +9,8 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "@sendwirekit/tokens": "workspace:*",
-    "@sendwirekit/ui": "workspace:*",
+    "@staywirekit/tokens": "workspace:*",
+    "@staywirekit/ui": "workspace:*",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },

@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// lab_brand — MCP server exposing the sendwire brand kit to agents.
+// lab_brand — MCP server exposing the staywire brand kit to agents.
 //
 // Reads the generated brand.json (rebuild with `pnpm build:handoff`) plus the token/
-// component sources it points at. Run: `pnpm --filter @sendwirekit/handoff mcp`.
+// component sources it points at. Run: `pnpm --filter @staywirekit/handoff mcp`.
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { readFile } from "node:fs/promises";
@@ -19,8 +19,8 @@ const server = new McpServer({ name: "lab_brand", version: "0.1.0" });
 // Resource: the whole brand export.
 server.registerResource(
   "brand",
-  "brand://sendwirekit",
-  { title: "sendwire brand export", description: "Full brand.json", mimeType: "application/json" },
+  "brand://staywirekit",
+  { title: "staywire brand export", description: "Full brand.json", mimeType: "application/json" },
   async (uri) => ({
     contents: [{ uri: uri.href, mimeType: "application/json", text: JSON.stringify(await loadBrand(), null, 2) }],
   }),
@@ -33,7 +33,7 @@ const fail = (msg) => ({ content: [{ type: "text", text: msg }], isError: true }
 // Tool: full brand metadata.
 server.registerTool(
   "get_brand",
-  { title: "Get brand", description: "Return the full sendwire brand export (identity, status, tokens, components, voice, assets)." },
+  { title: "Get brand", description: "Return the full staywire brand export (identity, status, tokens, components, voice, assets)." },
   async () => json(await loadBrand()),
 );
 
@@ -43,7 +43,7 @@ server.registerTool(
   {
     title: "Get design tokens",
     description:
-      "Return sendwire design tokens. Default is the flat name→value map (e.g. \"color-primary-purple\": \"#8100d0\"). " +
+      "Return staywire design tokens. Default is the flat name→value map (e.g. \"color-primary-purple\": \"#8100d0\"). " +
       "Filter with `prefix` (e.g. \"color-ramp\", \"font\") and/or `match` (substring). " +
       "`format: \"css\"` returns the built globals.css; `format: \"dtcg\"` returns the W3C DTCG source (filters apply to flat only).",
     inputSchema: {
@@ -69,7 +69,7 @@ server.registerTool(
   "list_components",
   {
     title: "List components",
-    description: "Return the sendwire-branded shadcn component index with repo-relative source + story paths.",
+    description: "Return the staywire-branded shadcn component index with repo-relative source + story paths.",
   },
   async () =>
     json(
@@ -166,7 +166,7 @@ server.registerTool(
   "get_voice",
   {
     title: "Get voice & tone",
-    description: "Return the sendwire verbal identity. Default is the summary; `full: true` returns the complete voice.md.",
+    description: "Return the staywire verbal identity. Default is the summary; `full: true` returns the complete voice.md.",
     inputSchema: { full: z.boolean().optional().describe("Return the full voice.md instead of the summary") },
   },
   async ({ full }) => {

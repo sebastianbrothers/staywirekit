@@ -19,7 +19,7 @@ export const Default: Story = {
         <TabsTrigger value="alerts">Alerts</TabsTrigger>
       </TabsList>
       <TabsContent value="overview">
-        Portfolio health summary for all sendwire buildings.
+        Portfolio health summary for all staywire buildings.
       </TabsContent>
       <TabsContent value="units">
         Per-unit occupancy and maintenance status.

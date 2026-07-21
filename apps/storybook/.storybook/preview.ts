@@ -2,10 +2,10 @@ import type { Preview } from "@storybook/react-vite";
 import { withThemeByClassName } from "@storybook/addon-themes";
 import React from "react";
 
-// The sendwire-branded shadcn entry stylesheet: Tailwind v4 + sendwire token preset
-// (@sendwirekit/tokens) + the shadcn→sendwire theme mapping. @tailwindcss/vite
+// The staywire-branded shadcn entry stylesheet: Tailwind v4 + staywire token preset
+// (@staywirekit/tokens) + the shadcn→staywire theme mapping. @tailwindcss/vite
 // processes the @import "tailwindcss" inside it.
-import "@sendwirekit/ui/styles";
+import "@staywirekit/ui/styles";
 
 const preview: Preview = {
   parameters: {

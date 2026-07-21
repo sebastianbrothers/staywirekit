@@ -38,7 +38,7 @@ export const WithText: Story = {
       </InputGroupAddon>
       <InputGroupInput placeholder="you" />
       <InputGroupAddon align="inline-end">
-        <InputGroupText>@sendwire.ca</InputGroupText>
+        <InputGroupText>@staywire.ca</InputGroupText>
       </InputGroupAddon>
     </InputGroup>
   ),

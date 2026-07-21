@@ -1,12 +1,12 @@
 /* ==========================================================================
-   sendwire shadcn theme mapping
+   staywire shadcn theme mapping
    --------------------------------------------------------------------------
-   Maps shadcn/ui's semantic variables onto sendwire design tokens (from
-   @sendwirekit/tokens, generated from tokens.json).
+   Maps shadcn/ui's semantic variables onto staywire design tokens (from
+   @staywirekit/tokens, generated from tokens.json).
 
-   sendwire is LIGHT-FIRST (:root = light, .dark = synthesized dark — INTAKE
+   staywire is LIGHT-FIRST (:root = light, .dark = synthesized dark — INTAKE
    0.3/0.4). The signature move mirrors the reference's concept, inverted:
-   Resend's brightest pixel is a white CTA on black; sendwire's LIGHT mode
+   Resend's brightest pixel is a white CTA on black; staywire's LIGHT mode
    makes ink the loudest pixel (near-black CTA on cool paper), and its DARK
    mode completes the inversion (paper CTA on night).
 

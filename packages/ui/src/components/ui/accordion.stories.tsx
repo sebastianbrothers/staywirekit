@@ -19,7 +19,7 @@ export const Default: Story = {
   render: () => (
     <Accordion type="single" collapsible className="w-80">
       <AccordionItem value="what">
-        <AccordionTrigger>What is sendwire?</AccordionTrigger>
+        <AccordionTrigger>What is staywire?</AccordionTrigger>
         <AccordionContent>
           Canada&apos;s co-operation network — a place to connect to us and the
           people building together.

@@ -1,6 +1,6 @@
 {
-  "brand": "sendwirekit",
-  "basedOn": "sendwire",
+  "brand": "staywirekit",
+  "basedOn": "staywire",
   "version": "0.2.1",
   "generatedAt": "2026-07-20T22:24:49.659Z",
   "status": "populated",
@@ -432,7 +432,7 @@
             600,
             700
           ],
-          "source": "Shipped in @sendwirekit/ui (fonts.css)"
+          "source": "Shipped in @staywirekit/ui (fonts.css)"
         },
         {
           "family": "DM Sans",
@@ -498,41 +498,41 @@
         "brand/reference/brand/assets/flow-lines/still/4.png"
       ],
       "motion": [
-        "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-66.mp4",
-        "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-66-yellow.mp4",
-        "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-67.mp4",
-        "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-67-yellow.mp4",
-        "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-68.mp4",
-        "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-68-yellow.mp4",
-        "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-70.mp4",
-        "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-70-yellow.mp4"
+        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-66.mp4",
+        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-66-yellow.mp4",
+        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-67.mp4",
+        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-67-yellow.mp4",
+        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-68.mp4",
+        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-68-yellow.mp4",
+        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-70.mp4",
+        "brand/reference/brand/assets/flow-lines/motion/staywire-lines-70-yellow.mp4"
       ]
     },
     "resources": [
       {
         "label": "Atomic brand system",
         "type": "figma",
-        "url": "https://www.figma.com/design/bkBYMkh5sbW80R2AIK9ugK/Sendwire-ABS?node-id=21478-696"
+        "url": "https://www.figma.com/design/bkBYMkh5sbW80R2AIK9ugK/Staywire-ABS?node-id=21478-696"
       },
       {
         "label": "Creative direction presentation",
         "type": "figma",
-        "url": "https://www.figma.com/design/bkBYMkh5sbW80R2AIK9ugK/Sendwire-ABS?node-id=21478-5647"
+        "url": "https://www.figma.com/design/bkBYMkh5sbW80R2AIK9ugK/Staywire-ABS?node-id=21478-5647"
       },
       {
         "label": "Brand guide",
         "type": "web",
-        "url": "https://sendwirekit-storybook.vercel.app"
+        "url": "https://staywirekit-storybook.vercel.app"
       },
       {
         "label": "Reference site",
         "type": "web",
-        "url": "https://sendwirekit-site.vercel.app"
+        "url": "https://staywirekit-site.vercel.app"
       },
       {
         "label": "ToolKit guidelines",
         "type": "web",
-        "url": "https://app.brandtoolk.it/guidelines/sendwire"
+        "url": "https://app.brandtoolk.it/guidelines/staywire"
       }
     ],
     "downloads": [
@@ -556,7 +556,7 @@
   },
   "voice": {
     "source": "brand/reference/brand/voice.md",
-    "summary": "The verbal identity for anything that carries the Sendwire name — website, brochures, decks, emails, social, sales conversations. Built on one word: *co-operation*. Plain, confident, sentence-case. We speak each room's language and never speak telecom. The category banner is *Canada's co-operation network*; the sign-off is *Open by design. Built around you.* This document derives from [[strategy]] and the [[Sendwire ABS-2026-05-28|atomic brand system]]."
+    "summary": "The verbal identity for anything that carries the Staywire name — website, brochures, decks, emails, social, sales conversations. Built on one word: *co-operation*. Plain, confident, sentence-case. We speak each room's language and never speak telecom. The category banner is *Canada's co-operation network*; the sign-off is *Open by design. Built around you.* This document derives from [[strategy]] and the [[Staywire ABS-2026-05-28|atomic brand system]]."
   },
   "docs": {
     "index": "brand/reference/brand/INDEX.md",
@@ -607,14 +607,14 @@
       "brand/reference/brand/assets/flow-lines/still/4.png"
     ],
     "flowLinesMotion": [
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-66-yellow.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-66.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-67-yellow.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-67.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-68-yellow.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-68.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-70-yellow.mp4",
-      "brand/reference/brand/assets/flow-lines/motion/sendwire-lines-70.mp4"
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-66-yellow.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-66.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-67-yellow.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-67.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-68-yellow.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-68.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-70-yellow.mp4",
+      "brand/reference/brand/assets/flow-lines/motion/staywire-lines-70.mp4"
     ]
   }
 }

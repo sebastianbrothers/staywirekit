@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import guidelines from "@sendwirekit/tokens/guidelines.json";
+import guidelines from "@staywirekit/tokens/guidelines.json";
 import { Page, Hero, Section, Grid, DownloadLink, brandUrl, repoUrl } from "./guide";
 
 function AssetTile({ path, video = false }: { path: string; video?: boolean }) {

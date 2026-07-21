@@ -13,7 +13,7 @@ const config: StorybookConfig = {
   },
   staticDirs: [
     // Serve the vendored brand KB's assets (logos, flow-lines, fonts) at /brand
-    // for the Foundations pages. Graphik faces themselves ship in @sendwirekit/ui.
+    // for the Foundations pages. Graphik faces themselves ship in @staywirekit/ui.
     { from: "../../../brand/reference/brand/assets", to: "/brand" },
   ],
   typescript: {
