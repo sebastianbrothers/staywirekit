@@ -21,7 +21,7 @@
    behaviour, so the kit defines it: centered, token-driven gutter, 1400px cap. */
 @utility container {
   width: 100%;
-  max-width: 1400px;
+  max-width: var(--space-container-max, 1400px);
   margin-inline: auto;
   padding-inline: var(--space-gutter);
 }

@@ -2,74 +2,81 @@
    sendwire shadcn theme mapping
    --------------------------------------------------------------------------
    Maps shadcn/ui's semantic variables onto sendwire design tokens (from
-   @sendwirekit/tokens, generated from tokens.json / design.md).
+   @sendwirekit/tokens, generated from tokens.json).
 
-   sendwire is DARK-FIRST. shadcn's convention is :root = light, .dark = dark, so
-   we keep that contract and let Storybook default the canvas to `.dark`
-   (deep-purple). Both modes are brand-correct.
+   sendwire is LIGHT-FIRST (:root = light, .dark = synthesized dark — INTAKE
+   0.3/0.4). The signature move mirrors the reference's concept, inverted:
+   Resend's brightest pixel is a white CTA on black; sendwire's LIGHT mode
+   makes ink the loudest pixel (near-black CTA on cool paper), and its DARK
+   mode completes the inversion (paper CTA on night).
 
-   Token-level themed. Per-component bespoke polish (e.g. pill buttons,
-   chevron device, glow on live cards) is a follow-up pass, not this MVP.
+   Mapping judgment calls (Phase 3.5, logged in FINDINGS):
+   - --background = paper (page), --card = white — cards step UP in luminance
+     (inverse of the reference's dark elevation ladder).
+   - --secondary = deep-paper — survives on BOTH paper and white cards.
+   - --ring = indigo: the signature is the focus color; deliberately visible.
+   - Elevation is hairline-borders-not-shadows (reference rule) — shadow
+     tokens exist but are whisper-soft and unused by default components.
    ========================================================================== */
 
 :root {
   --radius: var(--radius-md);
 
-  /* Light mode — white canvas, deep-purple ink, light-purple surfaces. */
-  --background: var(--color-white);
-  --foreground: var(--color-deep-purple);
-  --card: var(--color-light-purple);
-  --card-foreground: var(--color-deep-purple);
+  /* Light mode — cool paper canvas, ink text, ink CTA, indigo signature. */
+  --background: var(--color-paper);
+  --foreground: var(--color-ink);
+  --card: var(--color-white);
+  --card-foreground: var(--color-ink);
   --popover: var(--color-white);
-  --popover-foreground: var(--color-deep-purple);
-  --primary: var(--color-primary-purple);
-  --primary-foreground: var(--color-white);
-  --secondary: var(--color-light-purple);
-  --secondary-foreground: var(--color-deep-purple);
-  --muted: var(--color-ramp-neutral-200);
-  --muted-foreground: var(--color-ramp-neutral-500);
-  --accent: var(--color-light-purple);
-  --accent-foreground: var(--color-deep-purple);
+  --popover-foreground: var(--color-ink);
+  --primary: var(--color-ink);
+  --primary-foreground: var(--color-paper-on-night);
+  --secondary: var(--color-deep-paper);
+  --secondary-foreground: var(--color-ink);
+  --muted: var(--color-ramp-neutral-100);
+  --muted-foreground: var(--color-slate);
+  --accent: var(--color-indigo-wash);
+  --accent-foreground: var(--color-indigo-deep);
   --destructive: var(--color-ramp-red-600);
   --destructive-foreground: var(--color-white);
-  --border: var(--color-ramp-neutral-200);
+  --border: var(--color-mist);
   --input: var(--color-ramp-neutral-300);
-  --ring: var(--color-primary-purple);
+  --ring: var(--color-indigo);
 
-  --chart-1: var(--color-primary-purple);
-  --chart-2: var(--color-mid-purple);
-  --chart-3: var(--color-ui-green);
-  --chart-4: var(--color-ramp-yellow-300);
+  --chart-1: var(--color-indigo);
+  --chart-2: var(--color-ramp-blue-500);
+  --chart-3: var(--color-ramp-green-500);
+  --chart-4: var(--color-ramp-yellow-400);
   --chart-5: var(--color-ramp-neutral-500);
 }
 
 .dark {
-  /* Dark-first canvas — deep purple field, white ink. */
-  --background: var(--color-deep-purple);
-  --foreground: var(--color-white);
-  --card: var(--color-surface-dark);
-  --card-foreground: var(--color-white);
-  --popover: var(--color-surface-dark);
-  --popover-foreground: var(--color-white);
-  --primary: var(--color-primary-purple);
-  --primary-foreground: var(--color-white);
-  --secondary: var(--color-surface-dark);
-  --secondary-foreground: var(--color-white);
-  --muted: var(--color-surface-dark);
-  --muted-foreground: var(--color-muted-on-dark);
-  --accent: var(--color-line-dark);
-  --accent-foreground: var(--color-white);
+  /* Synthesized dark (INTAKE 0.4) — night canvas, paper CTA = brightest pixel. */
+  --background: var(--color-night);
+  --foreground: var(--color-paper-on-night);
+  --card: var(--color-night-raised);
+  --card-foreground: var(--color-paper-on-night);
+  --popover: var(--color-night-raised);
+  --popover-foreground: var(--color-paper-on-night);
+  --primary: var(--color-paper-on-night);
+  --primary-foreground: var(--color-ink);
+  --secondary: var(--color-night-raised);
+  --secondary-foreground: var(--color-paper-on-night);
+  --muted: var(--color-night-raised);
+  --muted-foreground: var(--color-ramp-neutral-400);
+  --accent: var(--color-line-night);
+  --accent-foreground: var(--color-paper-on-night);
   --destructive: var(--color-ramp-red-500);
   --destructive-foreground: var(--color-white);
-  --border: var(--color-line-dark);
-  --input: var(--color-line-dark);
-  --ring: var(--color-mid-purple);
+  --border: var(--color-line-night);
+  --input: var(--color-line-night);
+  --ring: var(--color-ramp-indigo-500);
 
-  --chart-1: var(--color-mid-purple);
-  --chart-2: var(--color-primary-purple);
-  --chart-3: var(--color-ui-green);
-  --chart-4: var(--color-yellow);
-  --chart-5: var(--color-muted-on-dark);
+  --chart-1: var(--color-ramp-indigo-400);
+  --chart-2: var(--color-ramp-blue-400);
+  --chart-3: var(--color-ramp-green-400);
+  --chart-4: var(--color-ramp-yellow-400);
+  --chart-5: var(--color-ramp-neutral-400);
 }
 
 @theme inline {
@@ -99,10 +106,12 @@
   --color-chart-5: var(--chart-5);
 }
 
-/* Elevation — depth is tonal + light, not drop shadows (flat-by-default rule). */
+/* Elevation — the reference system has NO drop-shadow language: hairline
+   borders + temperature shifts carry depth. These stay whisper-soft and are
+   opt-in only (decorative panels), never on default components. */
 @theme {
-  --shadow-glow: 0 0 60px -10px rgba(198, 105, 255, 0.35);
-  --shadow-soft: 0 8px 24px -12px rgba(18, 12, 22, 0.18);
+  --shadow-soft: 0 6px 20px -14px rgba(11, 13, 18, 0.14);
+  --shadow-wash: 0 0 80px -20px rgba(77, 91, 245, 0.16);
 }
 
 /* Sonner: its default description colour is near-invisible on the toast surface.
