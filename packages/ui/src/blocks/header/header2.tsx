@@ -25,8 +25,8 @@ export const Header2 = ({
   return (
     <header className="w-full border-b bg-background">
       <div className="container mx-auto">
-        <div className="flex h-16 items-center justify-between gap-4">
-          {wordmark}
+        <div className="flex h-16 items-center gap-4">
+          <div className="flex flex-1 items-center">{wordmark}</div>
           <nav className="hidden gap-8 lg:flex">
             {links.map((link) => (
               <a
@@ -38,7 +38,7 @@ export const Header2 = ({
               </a>
             ))}
           </nav>
-          <div className="hidden items-center gap-3 lg:flex">
+          <div className="hidden flex-1 items-center justify-end gap-3 lg:flex">
             <Button variant="ghost" size="sm">
               {signIn}
             </Button>
@@ -54,7 +54,7 @@ export const Header2 = ({
           </button>
         </div>
         {open && (
-          <nav className="flex flex-col gap-4 border-t py-lg lg:hidden">
+          <nav className="flex flex-col gap-4 border-t py-6 lg:hidden">
             {links.map((link) => (
               <a
                 key={link}

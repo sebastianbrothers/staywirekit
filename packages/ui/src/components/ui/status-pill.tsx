@@ -29,7 +29,7 @@ export function StatusPill({
     <span
       data-slot="status-pill"
       className={cn(
-        "inline-flex w-fit items-center gap-2 rounded-full border bg-card px-3 py-1 text-label leading-label tracking-label text-muted-foreground",
+        "inline-flex w-fit items-center gap-2 whitespace-nowrap rounded-full border bg-card px-3 py-1 text-label leading-label tracking-label text-muted-foreground",
         className
       )}
       {...props}

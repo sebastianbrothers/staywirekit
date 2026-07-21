@@ -23,7 +23,7 @@ export const Cta3 = ({
 }: Cta3Props = {}) => (
   <div className="relative w-full overflow-hidden">
     <div className="container relative mx-auto">
-      <div className="flex flex-col items-center gap-8 py-section-lg text-center">
+      <div className="flex flex-col items-center gap-8 py-section text-center">
         <h2 className="font-display text-headline leading-display tracking-display font-normal">
           {titleLine1}
           <br />

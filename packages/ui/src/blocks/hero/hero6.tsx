@@ -27,7 +27,7 @@ export const Hero6 = ({
 }: Hero6Props = {}) => (
   <div className="w-full border-b">
     <div className="container mx-auto">
-      <div className="grid items-center gap-10 py-section-lg lg:grid-cols-2">
+      <div className="grid items-center gap-10 py-section lg:grid-cols-2">
         <div className="flex flex-col items-start gap-6">
           <Badge variant="outline" className="rounded-full px-3 py-1 text-label tracking-label">
             {announcement} <MoveRight className="size-3" />

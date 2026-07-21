@@ -32,7 +32,7 @@ export const Footer2 = ({
 }: Footer2Props = {}) => (
   <footer className="w-full border-t">
     <div className="container mx-auto">
-      <div className="grid gap-10 py-xxl md:grid-cols-[1.2fr_repeat(5,1fr)]">
+      <div className="grid gap-x-10 gap-y-12 py-16 lg:py-20 md:grid-cols-[1.2fr_repeat(5,1fr)]">
         <div className="flex flex-col items-start gap-4">
           {wordmark}
           <div className="flex flex-col gap-1 text-label leading-label text-muted-foreground">
@@ -59,7 +59,7 @@ export const Footer2 = ({
           </nav>
         ))}
       </div>
-      <div className="border-t py-lg text-caption leading-caption text-muted-foreground">
+      <div className="border-t py-6 text-caption leading-caption text-muted-foreground">
         {legal}
       </div>
     </div>
