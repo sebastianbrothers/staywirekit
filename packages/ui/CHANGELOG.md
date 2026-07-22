@@ -1,5 +1,14 @@
 # @staywirekit/ui
 
+## 0.3.1
+
+### Patch Changes
+
+- `"use client"` on calendar, chart, form, sidebar, slider — components that
+  call hooks/createContext directly. Same RSC trap BUILDING-WITH-THE-KIT
+  limitation #1 fixed for blocks; surfaced by the staywire admin (first
+  Next.js consumer of the component set).
+
 ## 0.3.0
 
 ### Minor Changes
