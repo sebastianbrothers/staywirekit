@@ -8,6 +8,7 @@ import { Feature6 } from "./feature6";
 import { Feature7 } from "./feature7";
 import { Feature8 } from "./feature8";
 import { Feature9 } from "./feature9";
+import { Feature10 } from "./feature10";
 
 const meta: Meta = {
   title: "Blocks/Feature",
@@ -26,3 +27,4 @@ export const Variant6: Story = { name: "Feature 6", render: () => <Feature6 /> }
 export const Variant7: Story = { name: "Feature 7", render: () => <Feature7 /> };
 export const Variant8: Story = { name: "Feature 8", render: () => <Feature8 /> };
 export const Variant9: Story = { name: "Feature 9", render: () => <Feature9 /> };
+export const Variant10: Story = { name: "Feature 10", render: () => <Feature10 /> };
