@@ -96,6 +96,6 @@ Batched to 6 decisions. Recommendation column = overnight self-judgment; nothing
 | D1 code cluster (icon-chip, code-window, code-tabs) | 8, 14, 15, 20 | BUILD | ⚡ built overnight (site needs the dev story — see GATE-LOG) |
 | D2 badges/status (pill variants, status-pill, event chips) | 9, 10, 11 | BUILD | ⚡ built overnight (small, feeds site) |
 | D3 one-pager spine (hero6, footer2, cta3, header2) | 1, 3, 19, 23 | BUILD | ⚡ built overnight (Phase 6 depends on them) |
-| D4 product-true showpieces (artifact-inset, feature10 event feed) | 16, 17 | BUILD | pending morning |
-| D5 pricing slider (pricing3) | 22 | BUILD (low priority) | pending morning |
-| D6 editor mockup shell | 27 | DEFER | pending morning |
+| D4 product-true showpieces (artifact-inset, feature10 event feed) | 16, 17 | BUILD | **ADJUDICATED 2026-07-21 morning: BUILD** — in progress |
+| D5 pricing slider (pricing3) | 22 | BUILD (low priority) | **ADJUDICATED 2026-07-21 morning: BUILD** — in progress |
+| D6 editor mockup shell | 27 | DEFER | **ADJUDICATED 2026-07-21 morning: DEFER** |
