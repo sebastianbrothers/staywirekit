@@ -1,5 +1,12 @@
 # @staywirekit/storybook
 
+## 0.1.4
+
+### Patch Changes
+
+- Updated dependencies
+  - @staywirekit/ui@0.3.0
+
 ## 0.1.3
 
 ### Patch Changes

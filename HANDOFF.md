@@ -4,9 +4,9 @@
 > and re-run `pnpm build:handoff`.
 
 - **Brand:** staywirekit (based on staywire)
-- **Version:** 0.2.1
+- **Version:** 0.3.0
 - **Status:** populated
-- **Generated:** 2026-07-21T10:52:57.799Z
+- **Generated:** 2026-07-22T21:01:20.740Z
 
 ## Tokens
 
@@ -21,10 +21,13 @@ Source of truth: [`packages/tokens/tokens.json`](./packages/tokens/tokens.json) 
 - `accordion`
 - `alert`
 - `alert-dialog`
+- `artifact-inset`
 - `aspect-ratio`
+- `attachment`
 - `avatar`
 - `badge`
 - `breadcrumb`
+- `bubble`
 - `button`
 - `button-group`
 - `calendar`
@@ -52,7 +55,10 @@ Source of truth: [`packages/tokens/tokens.json`](./packages/tokens/tokens.json) 
 - `item`
 - `kbd`
 - `label`
+- `marker`
 - `menubar`
+- `message`
+- `message-scroller`
 - `native-select`
 - `navigation-menu`
 - `pagination`
@@ -88,11 +94,11 @@ built on the component suite above, in `packages/ui/src/blocks/<category>/`:
 - **contact**: `contact1`
 - **cta**: `cta1`, `cta2`, `cta3`
 - **faq**: `faq1`, `faq2`
-- **feature**: `feature1`, `feature2`, `feature3`, `feature4`, `feature5`, `feature6`, `feature7`, `feature8`, `feature9`
+- **feature**: `feature1`, `feature10`, `feature2`, `feature3`, `feature4`, `feature5`, `feature6`, `feature7`, `feature8`, `feature9`
 - **footer**: `footer1`, `footer2`
 - **header**: `header1`, `header2`
 - **hero**: `hero1`, `hero2`, `hero3`, `hero4`, `hero5`, `hero6`
-- **pricing**: `pricing1`, `pricing2`
+- **pricing**: `pricing1`, `pricing2`, `pricing3`
 - **stats**: `stats1`, `stats2`
 - **testimonials**: `testimonials1`
 
