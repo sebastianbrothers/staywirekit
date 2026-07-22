@@ -13,7 +13,7 @@ export interface Hero2Props {
 
 export const Hero2 = ({
   badge = "For owners",
-  title = "Guests book on your site",
+  title = "A booking engine guests never notice",
   description = "staywire sits behind your own website, so guests book in three clicks without ever leaving your page. You get a calm admin for rates, rooms, and cancellations. Double-booking is impossible — the database refuses it, so you never have to make that phone call.",
   secondaryCta = "See the admin",
   primaryCta = "Talk to us",

@@ -12,7 +12,7 @@ export interface Hero1Props {
 
 export const Hero1 = ({
   announcement = "Explore the staywire API",
-  title = "Quote, hold, confirm",
+  title = "Availability, quotes, bookings — one API",
   description = "staywire is the REST API between your product and a confirmed stay. Request a quote, hold the price for 15 minutes, confirm the booking — double-booking is impossible at the database layer. Signed, replayable webhooks tell your systems the moment anything changes.",
   secondaryCta = "Read the docs",
   primaryCta = "Start building",

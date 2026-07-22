@@ -15,7 +15,7 @@ export interface Cta3Props {
 }
 
 export const Cta3 = ({
-  titleLine1 = "Booking, rewired.",
+  titleLine1 = "The booking wire.",
   titleLine2 = "Live today.",
   primaryCta = "Start building",
   secondaryCta = "Book a demo",

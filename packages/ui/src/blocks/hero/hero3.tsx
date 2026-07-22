@@ -13,7 +13,7 @@ export interface Hero3Props {
 
 export const Hero3 = ({
   badge = "For your guests",
-  title = "Booked in three clicks",
+  title = "A booking flow guests finish",
   description = "Guests pick dates, see an exact price, and confirm — three clicks, all inside your site. Every quote holds its price for 15 minutes, with taxes itemized and the cancellation policy snapshotted before anyone pays.",
   secondaryCta = "See it live",
   primaryCta = "Try a booking",

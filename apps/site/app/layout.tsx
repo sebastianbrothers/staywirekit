@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "staywire — booking for builders",
+  title: "staywire — the booking engine for independent stays",
   description:
     "The API-first booking engine for independent stays. Quote, confirm, and deliver bookings from your own product — double-booking is impossible at the database layer.",
 };

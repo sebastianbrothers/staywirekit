@@ -13,7 +13,7 @@ export interface Hero4Props {
 
 export const Hero4 = ({
   badge = "For agents",
-  title = "Book on a guest's behalf",
+  title = "The booking engine for agents",
   description = "The staywire MCP server gives your agent the same wire the website uses: quote, hold, confirm. A voice agent can take the call and book the stay end to end, and every hold carries itemized taxes and a snapshot of the cancellation policy.",
   secondaryCta = "Talk to us",
   primaryCta = "Connect your agent",

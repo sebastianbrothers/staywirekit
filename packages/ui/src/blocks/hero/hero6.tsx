@@ -19,8 +19,8 @@ export interface Hero6Props {
 
 export const Hero6 = ({
   announcement = "Announcing the staywire MCP server",
-  title = "Booking for builders",
-  subtitle = "The API-first booking engine for independent stays. Quote, confirm, and deliver bookings from your own product — double-booking is impossible at the database layer.",
+  title = "The booking engine for independent stays",
+  subtitle = "Quote, confirm, and deliver stays from your own product. Double-booking is impossible at the database layer, and every event lands on a signed webhook.",
   primaryCta = "Start building",
   secondaryCta = "Read the docs",
   art,
