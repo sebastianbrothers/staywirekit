@@ -39,9 +39,36 @@ The full recipe (install snippet, the `@staywirekit/tokens` override, the
 `onlyBuiltDependencies` allowlist, Next `transpilePackages`) lives in
 [`HANDOFF.md → Consuming this kit`](../HANDOFF.md). Verified end-to-end: a scratch
 Vite app outside the repo installs both packages and builds pixel-identical output
-(tokens, Graphik faces, container/py-section rhythm all present). Source-shipping
-means the consumer's bundler compiles our TSX — fine for Next/Vite, would break in a
-no-build environment.
+(tokens, Fraunces/Inter/JetBrains Mono faces, container/py-section rhythm all
+present). Source-shipping means the consumer's bundler compiles our TSX — fine for
+Next/Vite, would break in a no-build environment.
+
+## Theme-only consumers (re-theming an existing app) — proven on the staywire admin
+
+An app with its own shadcn component set (the staywire admin runs base-nova on
+Base UI) doesn't want `./styles` — that entry brings the kit's Tailwind import and
+`@source` globs. The seam is three smaller imports after the app's own framework
+imports:
+
+```css
+@import "@staywirekit/tokens/preset.css"; /* --color-*, --font-*, --radius-*   */
+@import "@staywirekit/ui/theme";          /* shadcn semantic mapping, both modes */
+@import "@staywirekit/ui/fonts";          /* Fraunces/Inter/JBMono @fontsource  */
+```
+
+What the consumer still owns (found re-theming the admin, 2026-07-22):
+
+- **Sidebar variables** — `theme.css` doesn't brand `--sidebar-*` (the kit site has
+  no sidebar; `index.css` carries unbranded shadcn defaults). Map them onto kit
+  tokens app-side following the theme's judgment calls (surfaces step by luminance,
+  indigo signature on the active item).
+- **App-semantic aliases** — keep domain names (`--color-success-600` & co) and
+  point them at kit ramps in an app-level `@theme` block; zero call-site churn.
+- **Palette-collision sweep** — any class that matched the app's OLD custom palette
+  but also matches a Tailwind default (`neutral-500`…) must be swept to kit tokens
+  (`ramp-neutral-500`), or it silently falls back to Tailwind's grays. Classes with
+  no default (`copper-*`) fail the build loudly — the dangerous ones are the quiet
+  ones.
 
 ## Still open (known, not yet needed)
 
