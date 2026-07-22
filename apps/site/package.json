@@ -1,6 +1,6 @@
 {
   "name": "@staywirekit/site",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
   "description": "Reference consumer — a staywire marketing site composed entirely from kit blocks. Proves the kit builds real sites; see docs/BUILDING-WITH-THE-KIT.md.",
   "scripts": {

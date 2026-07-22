@@ -1,6 +1,6 @@
 {
   "name": "@staywirekit/ui",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "shadcn/ui component suite branded to staywire",
   "type": "module",
   "repository": {
@@ -19,7 +19,8 @@
     "./components/*": "./src/components/ui/*.tsx",
     "./blocks/*": "./src/blocks/*.tsx",
     "./styles": "./src/index.css",
-    "./theme": "./src/theme.css"
+    "./theme": "./src/theme.css",
+    "./fonts": "./src/fonts.css"
   },
   "scripts": {
     "ui:add": "shadcn@latest add",

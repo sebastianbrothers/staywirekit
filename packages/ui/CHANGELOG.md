@@ -1,5 +1,14 @@
 # @staywirekit/ui
 
+## 0.2.2
+
+### Patch Changes
+
+- Add `./fonts` export so theme-only consumers (apps with their own Tailwind
+  entry, e.g. the staywire admin) can import the brand faces without pulling the
+  kit's full `./styles` entry. Consumption seam is now: `tokens/preset.css` +
+  `ui/theme` + `ui/fonts`.
+
 ## 0.2.1
 
 ### Patch Changes
