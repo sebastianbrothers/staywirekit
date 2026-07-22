@@ -30,3 +30,5 @@ self-judgment = "safe to proceed", not "final". Morning revision pass expected.
 5. **Rhythm eye-tune** — gutter 24 / section 96 / section-lg 128 flagged since intake.
 6. **Phase 0 intake ratification** — fonts (Fraunces/Inter/JetBrains Mono), light derivation concept ("ink is the loudest pixel").
 | Morning revision 1 (operator: header/footer spacing) | FIXED + live-verified | d6c0bfa · staywirekit-site.vercel.app | Root cause: phantom spacing utilities (py-section-lg/py-xxl/py-lg) silently dropped by Tailwind — FINDINGS #10. Also: header rebalanced to true 3-zone (wordmark/flex-1 · centered nav · actions/flex-1), footer rhythm py-16/lg:py-20 + gap-y-12, legal row py-6, status pill nowrap. Hero/CTA bands regained their 96/128 section rhythm as a side effect (same root cause) |
+| Originality review (HARD-STOP) | **OPERATOR PASS** 2026-07-21 morning | storybook Foundations/Welcome + Logo | "Original enough" — Foundations + wire-mark read as staywire's own language |
+| Gate A2 (final) | **ADJUDICATED**: D4+D5 BUILD (shipped 18a3796) · D6 DEFER | COMPONENTS-MAP.md | Map fully closed — 28/28 rows resolved |
